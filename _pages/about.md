@@ -9,19 +9,21 @@ redirect_from:
 ---
 
 I'm interested in ...
+ 
 
-# Awards
+## Awards
 - Google AI Focused Research Awards Program, 2018-2019
 - Global Ph.D Fellowship Program, 2019-2021
+ 
 
-# Preprints
+## Preprints
 
 **<font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>** \\
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang
+ 
 
-
-# Conference Publications
+## Conference Publications
 
 **Meta Dropout: Learning to Perturb Latent Features for Generalization** \\
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
