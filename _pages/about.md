@@ -18,7 +18,7 @@ I'm interested in ...
 
 ## Preprints
 
-<font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font> \\
+<font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 arXiv, 2018
@@ -26,29 +26,29 @@ arXiv, 2018
 
 ## Conference Publications
 
-**Meta Dropout: Learning to Perturb Latent Features for Generalization** \\
+<font size="4">Meta Dropout: Learning to Perturb Latent Features for Generalization**</font>
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
 **Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICLR**</span> 2020
 
-**Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks** \\
+<font size="4">Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks</font> \\
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
 Donghyun Na\*, **Hae Beom Lee\***, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
 (\*: equal contribution) \\
 <span style="color:darkred">**ICLR**</span> 2020, Oral Presentation (48/2594=1.9%)
 
-**DropMax: Adaptive Variational Softmax** \\
+<font size="4">DropMax: Adaptive Variational Softmax</font> \\
 [[paper]](https://arxiv.org/pdf/1712.07834.pdf)[[code]](https://github.com/haebeom-lee/dropmax) \\
 **Hae Beom Lee**, Juho Lee, Saehoon Kim, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**NeurIPS**</span> 2018
 
-**Uncertainty-Aware Attention for Reliable Interpretation and Prediction** \\
+<font size="4">Uncertainty-Aware Attention for Reliable Interpretation and Prediction</font> \\
 [[paper]](https://arxiv.org/pdf/1805.09653.pdf)[[code]](https://github.com/jayheo/UA) \\
 Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang, Sung Ju Hwang \\
 (\*: equal contribution) \\
 <span style="color:darkred">**NeurIPS**</span> 2018
 
-**Deep Asymmetric Multi-task Feature Learning** \\
+<font size="4">Deep Asymmetric Multi-task Feature Learning</font> \\
 [[paper]](https://arxiv.org/pdf/1708.00260.pdf)[[code]](https://github.com/haebeom-lee/amtfl) \\
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
