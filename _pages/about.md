@@ -10,8 +10,6 @@ redirect_from:
 
 I'm interested in ...
 
-__Contact__ haebeom dot lee at kaist dot ac dot kr
-
 ## Awards
 
 ## Preprints
