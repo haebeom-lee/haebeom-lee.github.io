@@ -18,7 +18,7 @@ I'm interested in ...
 
 ## Preprints
 
-<font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
+- <font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 arXiv, 2018
@@ -26,18 +26,18 @@ arXiv, 2018
 
 ## Conference Publications
 
-<font size="4">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>
+- <font size="4">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
 **Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICLR**</span> 2020
 
-<font size="4">Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks</font>
+- <font size="4">Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks</font>
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
 Donghyun Na\*, **Hae Beom Lee\***, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
 (\*: equal contribution) \\
 <span style="color:darkred">**ICLR**</span> 2020, Oral Presentation (48/2594=1.9%)
 
-<font size="4.5">DropMax: Adaptive Variational Softmax</font>
+- <font size="4">DropMax: Adaptive Variational Softmax</font>
 [[paper]](https://arxiv.org/pdf/1712.07834.pdf)[[code]](https://github.com/haebeom-lee/dropmax) \\
 **Hae Beom Lee**, Juho Lee, Saehoon Kim, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**NeurIPS**</span> 2018
