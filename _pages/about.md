@@ -37,8 +37,8 @@ Donghyun Na\*, **Hae Beom Lee\***, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunh
 (\*: equal contribution) \\
 <span style="color:darkred">**ICLR**</span> 2020, Oral Presentation (48/2594=1.9%)
 
-<font size="4">DropMax: Adaptive Variational Softmax</font> \\
-[[paper]](https://arxiv.org/pdf/1712.07834.pdf)[[code]](https://github.com/haebeom-lee/dropmax)
+<font size="4">DropMax: Adaptive Variational Softmax</font>
+[[paper]](https://arxiv.org/pdf/1712.07834.pdf)[[code]](https://github.com/haebeom-lee/dropmax) \\
 **Hae Beom Lee**, Juho Lee, Saehoon Kim, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**NeurIPS**</span> 2018
 
