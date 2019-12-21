@@ -8,10 +8,11 @@ redirect_from:
   - /about.html
 ---
 
-## Research Interest
-- Bayesian Deep Learning
-- Multi-task Learning
-- Meta Learning
+I'm interested in ...
+
+## Contact
+
+## Awards
 
 ## Preprints
 
