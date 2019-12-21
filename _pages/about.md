@@ -14,15 +14,15 @@ I'm interested in ...
 
 ## Publications
 
-**<font size="1">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>** \\
-[[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
-Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
-Submitted
+**<font size="3">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>** \\
+[[<font size="3">paper</font>]](https://arxiv.org/pdf/1805.10896.pdf) \\
+<font size="3">Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang</font> \\
+<font size="3">Submitted</font>
 
-**Meta Dropout: Learning to Perturb Latent Features for Generalization** \\
-[[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
-**Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
-<span style="color:steelblue">**ICLR**</span> 2020
+**<font size="3">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>** \\
+[[<font size="3">paper</font>]](https://openreview.net/pdf?id=BJgd81SYwr) \\
+**<font size="3">Hae Beom Lee</font>**<font size="3">, Taewook Nam, Eunho Yang, Sung Ju Hwang</font> \\
+<font size="3"><span style="color:steelblue">**ICLR**</span> 2020</font>
 
 **Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks** \\
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
