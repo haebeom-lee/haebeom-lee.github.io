@@ -23,7 +23,7 @@ ICLR 2020
 
 **Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks** \\
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
-Donghyun Na*, Hae Beom Lee*, Hayeon Lee*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
+Donghyun Na\*, Hae Beom Lee\*, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
 ICLR 2020, Oral Presentation (48/2594=1.9%)
 
 **DropMax: Adaptive Variational Softmax** \\
@@ -33,7 +33,7 @@ NeurIPS 2018
 
 **Uncertainty-Aware Attention for Reliable Interpretation and Prediction** \\
 [[paper]](https://arxiv.org/pdf/1805.09653.pdf)[[code]](https://github.com/jayheo/UA) \\
-Jay Heo*, Hae Beom Lee*, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang, Sung Ju Hwang \\
+Jay Heo\*, Hae Beom Lee\*, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang, Sung Ju Hwang \\
 NeurIPS 2018
 
 **Deep Asymmetric Multi-task Feature Learning** \\
