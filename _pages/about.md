@@ -21,7 +21,7 @@ Submitted
 
 **Meta Dropout: Learning to Perturb Latent Features for Generalization** \\
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
-**Hae Beom Lee</font>**<font size="3">, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
+**Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
 <span style="color:steelblue">**ICLR**</span> 2020
 
 **Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks** \\
