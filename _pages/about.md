@@ -12,9 +12,9 @@ I'm a Ph.D student at [Machine Learning and Artificial Intelligence (MLAI) lab](
 
 My research interest includes:
 - Meta-learning
-- Bilevel optimization
 - Bayesian deep learning with variational inference
 - Understanding and modeling uncertainty in deep learning
+- Learning with noise and perturbation
  
 
 ## Awards
