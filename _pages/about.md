@@ -16,8 +16,8 @@ I'm interested in ...
 
 **<font size="3">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>** \\
 [[<font size="3">paper</font>]](https://arxiv.org/pdf/1805.10896.pdf) \\
-Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
-Submitted
+<font size="3">Juho Lee, Saehoon Kim, Jaehong Yoon,</font> **<font size="3">Hae Beom Lee</font>**<font size="3">, Eunho Yang, Sung Ju Hwang</font> \\
+<font size="3">Submitted</font>
 
 **<font size="3">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>** \\
 [[<font size="3">paper</font>]](https://openreview.net/pdf?id=BJgd81SYwr) \\
