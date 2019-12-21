@@ -8,6 +8,11 @@ redirect_from:
   - /about.html
 ---
 
+body{
+  font-family: Helvetica;
+  font-size: 16pt;
+}
+
 I'm interested in ...
 
 ## Awards
