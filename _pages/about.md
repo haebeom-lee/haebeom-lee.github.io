@@ -12,12 +12,13 @@ I'm interested in ...
 
 ## Awards
 
-## Publications
+## Preprints
 
 **Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout** \\
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf)
 Juho Lee, Saehoon Kim, Jaehong Yoon, Hae Beom Lee, Eunho Yang, Sung Ju Hwang
-Submitted
+
+## Conference Publications
 
 **Meta Dropout: Learning to Perturb Latent Features for Generalization** \\
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
