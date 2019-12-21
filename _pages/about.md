@@ -8,7 +8,14 @@ redirect_from:
   - /about.html
 ---
 
-I'm interested in ...
+I'm a Ph.D student at [Machine Learning and Artificial Intelligence (MLAI) lab](https://www.mlai-kaist.com/) in KAIST, under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/). I finished my B.S. degree at UNIST in 2016, and M.S. degree at UNIST in 2018 under the supervision of Prof. Sung Ju Hwang.
+
+My research interest includes:
+- Modeling Bayesian neural networks with variational inference
+- Modeling uncertainty in deep learning
+- Understanding generalization in deep learning
+- Meta Learning
+- Multi-task Learning
  
 
 ## Awards
