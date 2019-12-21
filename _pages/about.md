@@ -10,7 +10,7 @@ redirect_from:
 
 I'm interested in ...
 
-## Contact
+Contact: haebeom dot lee at kaist dot ac dot kr
 
 ## Awards
 
