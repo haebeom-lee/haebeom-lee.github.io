@@ -15,7 +15,7 @@ I'm interested in ...
 ## Preprints
 
 **Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout** \\
-[[paper]](https://arxiv.org/pdf/1805.10896.pdf)
+[[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, Hae Beom Lee, Eunho Yang, Sung Ju Hwang
 
 ## Conference Publications
