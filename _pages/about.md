@@ -48,7 +48,7 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 (\*: equal contribution) \\
 <span style="color:darkred">**NeurIPS**</span> 2018
 
-<font size="4">Deep Asymmetric Multi-task Feature Learning</font>
+<span style="color:navyblue"><font size="4">Deep Asymmetric Multi-task Feature Learning</font></span>
 [[paper]](https://arxiv.org/pdf/1708.00260.pdf)[[code]](https://github.com/haebeom-lee/amtfl) \\
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
