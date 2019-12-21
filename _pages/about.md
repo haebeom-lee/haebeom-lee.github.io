@@ -20,3 +20,8 @@ I'm interested in ...
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
 Hae Beom Lee, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
 International Conference on Learning Representations (ICLR) 2020
+
+**Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks** \\
+[[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
+Donghyun Na, Hae Beom Lee, Hayeon Lee, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
+International Conference on Learning Representations (ICLR) 2020, Oral Presentation (48/2594=1.85%)
