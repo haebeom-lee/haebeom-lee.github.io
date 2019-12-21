@@ -20,7 +20,7 @@ I'm interested in ...
 
 <font size="5">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font> \\
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
-Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang
+Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 arXiv, 2018
  
 
