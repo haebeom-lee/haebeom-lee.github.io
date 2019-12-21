@@ -23,13 +23,13 @@ Submitted
 
 **Meta Dropout: Learning to Perturb Latent Features for Generalization** \\
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
-Hae Beom Lee, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
-ICLR 2020
+**Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
+<span style="color:red">ICLR 2020</span>
 
 **Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks** \\
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
-Donghyun Na\*, Hae Beom Lee\*, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
-ICLR 2020, Oral Presentation (48/2594=1.9%)
+Donghyun Na\*, **Hae Beom Lee**\*, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
+<span style="color:red">ICLR 2020</span>, Oral Presentation (48/2594=1.9%)
 
 **DropMax: Adaptive Variational Softmax** \\
 [[paper]](https://arxiv.org/pdf/1712.07834.pdf)[[code]](https://github.com/haebeom-lee/dropmax) \\
