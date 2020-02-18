@@ -38,7 +38,7 @@ arXiv, 2018
 
 - <font size="4">Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks</font>
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) \\
-Donghyun Na\*, **Hae Beom Lee\***, Hayeon Lee\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
+**Hae Beom Lee\***, Hayeon Lee\*, Donghyun Na\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
 (\*: equal contribution) \\
 <span style="color:darkred">**ICLR**</span> 2020, **Oral Presentation** (48/2594=1.9%)
 
