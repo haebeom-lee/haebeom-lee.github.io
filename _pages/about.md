@@ -35,8 +35,8 @@ arXiv, 2018
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) [[code]](https://github.com/haebeom-lee/l2b) \\
 **Hae Beom Lee\***, Hayeon Lee\*, Donghyun Na\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
 (\*: equal contribution) \\
-
 <span style="color:darkred">**ICLR**</span> 2020, **Oral Presentation** (48/2594=1.9%)
+
 - <font size="4">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
 **Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
