@@ -23,6 +23,11 @@ My research interest includes:
 
 ## Preprints
 
+- <font size="4">Transductive Few-shot Learning with Meta-Learned Confidence</font>
+[[paper]](https://arxiv.org/pdf/2002.12017.pdf) \\
+Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
+arXiv, 2020
+
 - <font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
@@ -38,7 +43,7 @@ arXiv, 2018
 <span style="color:darkred">**ICLR**</span> 2020, **Oral Presentation** (48/2594=1.9%)
 
 - <font size="4">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>
-[[paper]](https://openreview.net/pdf?id=BJgd81SYwr) \\
+[[paper]](https://openreview.net/pdf?id=BJgd81SYwr) [[code]](https://github.com/haebeom-lee/metadrop) \\
 **Hae Beom Lee**, Taewook Nam, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICLR**</span> 2020
 
