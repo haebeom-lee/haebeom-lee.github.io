@@ -23,6 +23,12 @@ My research interest includes:
 
 ## Preprints
 
+- <font size="4">MetaPerturb: Transferable Regularizer for Heterogeneous Tasks and Architectures</font>
+[[paper]](https://arxiv.org/abs/2006.07540) \\
+Jeongun Ryu\*, Jaewoong Shin\*, **Hae Beom Lee\***, Sung Ju Hwang \\
+(\*: equal contribution) \\
+arXiv, 2020
+
 - <font size="4">Transductive Few-shot Learning with Meta-Learned Confidence</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf) \\
 Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
