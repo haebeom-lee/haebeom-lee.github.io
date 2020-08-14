@@ -42,6 +42,11 @@ arXiv, 2018
 
 ## Conference Publications
 
+- <font size="4">Meta-Learning for Short Utterance Speaker Recognition with Imbalance Length Pairs</font>
+[[paper]](https://arxiv.org/pdf/2004.02863.pdf) \\
+Seong Min Kye, Youngmoon Jung, **Hae Beom Lee**, Sung Ju Hwang, and Hoirin Kim \\
+<span style="color:darkred">**Interspeech**</span> 2020
+
 - <font size="4">Meta Variance Transfer: Learning to Augment from the Others</font>
 Seong Jin Park, Seungju Han, Ji-won Baek, Insoo Kim, Juhwan Song, **Hae Beom Lee**, Jae-Joon Han and Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2020
