@@ -48,6 +48,7 @@ Seong Min Kye, Youngmoon Jung, **Hae Beom Lee**, Sung Ju Hwang, and Hoirin Kim \
 <span style="color:darkred">**Interspeech**</span> 2020
 
 - <font size="4">Meta Variance Transfer: Learning to Augment from the Others</font>
+[[paper]](https://proceedings.icml.cc/static/paper_files/icml/2020/2222-Paper.pdf)
 Seong Jin Park, Seungju Han, Ji-won Baek, Insoo Kim, Juhwan Song, **Hae Beom Lee**, Jae-Joon Han and Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2020
 
