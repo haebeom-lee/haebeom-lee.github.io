@@ -40,7 +40,7 @@ arXiv, 2018
 [[paper]](https://papers.nips.cc/paper/2020/file/84ddfb34126fc3a48ee38d7044e87276-Paper.pdf) \\
 Jeongun Ryu\*, Jaewoong Shin\*, **Hae Beom Lee\***, Sung Ju Hwang \\
 (\*: equal contribution) \\
-<span style="color:darkred">**NeurIPS**</span> 2020
+<span style="color:darkred">**NeurIPS**</span> 2020, **Spotlight Presentation** (385/9454=4.1%)
 
 - <font size="4">Meta-Learning for Short Utterance Speaker Recognition with Imbalance Length Pairs</font>
 [[paper]](https://arxiv.org/pdf/2004.02863.pdf) \\
