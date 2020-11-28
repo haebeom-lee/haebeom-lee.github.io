@@ -43,7 +43,7 @@ Jeongun Ryu\*, Jaewoong Shin\*, **Hae Beom Lee\***, Sung Ju Hwang \\
 <span style="color:darkred">**NeurIPS**</span> 2020, **Spotlight Presentation** (385/9454=4.1%)
 
 - <font size="4">Meta-Learning for Short Utterance Speaker Recognition with Imbalance Length Pairs</font>
-[[paper]](https://arxiv.org/pdf/2004.02863.pdf) \\
+[[paper]](https://arxiv.org/pdf/2004.02863.pdf) [[code]](https://github.com/seongmin-kye/meta-SR) \\
 Seong Min Kye, Youngmoon Jung, **Hae Beom Lee**, Sung Ju Hwang, and Hoirin Kim \\
 <span style="color:darkred">**Interspeech**</span> 2020
 
