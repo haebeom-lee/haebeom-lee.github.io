@@ -23,6 +23,13 @@ My research interest includes:
 
 ## Preprints
 
+
+- <font size="4">Large-Scale Meta-Learning with Continual Trajectory Shifting</font>
+[[paper]](https://arxiv.org/pdf/2102.07215.pdf) \\
+Jaewoong Shin\*, **Hae Beom Lee\***, Boqing Gong, Sung Ju Hwang \\
+(\*: equal contribution) \\
+arXiv, 2021
+
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf) \\
 Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
