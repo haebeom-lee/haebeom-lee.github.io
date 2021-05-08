@@ -22,13 +22,6 @@ My research interest includes:
 
 ## Preprints
 
-
-- <font size="4">Large-Scale Meta-Learning with Continual Trajectory Shifting</font>
-[[paper]](https://arxiv.org/pdf/2102.07215.pdf) \\
-Jaewoong Shin\*, **Hae Beom Lee\***, Boqing Gong, Sung Ju Hwang \\
-(\*: equal contribution) \\
-arXiv, 2021
-
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf) \\
 Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
@@ -41,6 +34,12 @@ arXiv, 2018
  
 
 ## Conference Publications
+
+- <font size="4">Large-Scale Meta-Learning with Continual Trajectory Shifting</font>
+[[paper]](https://arxiv.org/pdf/2102.07215.pdf) \\
+Jaewoong Shin\*, **Hae Beom Lee\***, Boqing Gong, Sung Ju Hwang \\
+(\*: equal contribution) \\
+<span style="color:darkred">**ICML**</span> 2021 (to appear)
 
 - <font size="4">MetaPerturb: Transferable Regularizer for Heterogeneous Tasks and Architectures</font>
 [[paper]](https://papers.nips.cc/paper/2020/file/84ddfb34126fc3a48ee38d7044e87276-Paper.pdf) [[code]](https://github.com/JWoong148/metaperturb) \\
