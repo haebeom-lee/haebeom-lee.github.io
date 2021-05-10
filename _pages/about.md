@@ -11,12 +11,10 @@ I'm a Ph.D student at [Machine Learning and Artificial Intelligence (MLAI) lab](
 
 My research interest includes:
 - Meta-learning
-- Bayesian deep learning with variational inference
 - Learning with noise and perturbation
  
 
 ## Awards
-- Google AI Focused Research Awards Program, 2018-2019
 - Global Ph.D Fellowship Program, 2019-2021
  
 
