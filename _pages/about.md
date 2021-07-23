@@ -26,7 +26,7 @@ Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
 arXiv, 2020
 
 - <font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
-[[paper]](https://arxiv.org/pdf/1805.10896.pdf) \\
+[[paper]](https://arxiv.org/pdf/1805.10896.pdf)[[code]](https://github.com/OpenXAIProject/Variational_Dropouts) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 arXiv, 2018
  
