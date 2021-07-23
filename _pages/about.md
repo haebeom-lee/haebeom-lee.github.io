@@ -21,7 +21,7 @@ My research interest includes:
 ## Preprints
 
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
-[[paper]](https://arxiv.org/pdf/2002.12017.pdf) \\
+[[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
 Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
 arXiv, 2020
 
