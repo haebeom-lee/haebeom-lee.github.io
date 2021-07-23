@@ -34,7 +34,7 @@ arXiv, 2018
 ## Conference Publications
 
 - <font size="4">Large-Scale Meta-Learning with Continual Trajectory Shifting</font>
-[[paper]](https://arxiv.org/pdf/2102.07215.pdf) \\
+[[paper]](https://arxiv.org/pdf/2102.07215.pdf) [[code]](https://github.com/JWoong148/ContinualTrajectoryShifting) \\
 Jaewoong Shin\*, **Hae Beom Lee\***, Boqing Gong, Sung Ju Hwang \\
 (\*: equal contribution) \\
 <span style="color:darkred">**ICML**</span> 2021 (to appear)
