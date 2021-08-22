@@ -15,7 +15,8 @@ My research interest includes:
  
 
 ## Awards
-- Global Ph.D Fellowship Program, 2019-2021
+- Global Ph.D Fellowship Program 2019-2021
+- Google Ph.D Fellowship Program 2021
  
 
 ## Preprints
