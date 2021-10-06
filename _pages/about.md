@@ -33,6 +33,11 @@ Seanie Lee\*, **Hae Beom Lee\***, Juho Lee, Sung Ju Hwang \\
 (\*: equal contribution) \\
 arXiv, 2021
 
+- <font size="4">Meta-Learning Low Rank Covariance Factors for Energy-Based Deterministic Uncertainty</font>
+[paper] \\
+Jeffrey Ryan Willette, **Hae Beom Lee**, Juho Lee, Sung Ju Hwang \\
+arXiv, 2021
+
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
 Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
