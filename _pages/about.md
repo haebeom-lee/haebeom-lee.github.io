@@ -21,6 +21,18 @@ My research interest includes:
 
 ## Preprints
 
+
+- <font size="4">Online Hyperparameter Meta-Learning with Hypergradient Distillation</font>
+[paper] \\
+ **Hae Beom Lee**, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy Hospedales, Sung Ju Hwang \\
+arXiv, 2021
+
+- <font size="4">Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning</font>
+[paper] \\
+Seanie Lee\*, **Hae Beom Lee\***, Juho Lee, Sung Ju Hwang \\
+(\*: equal contribution) \\
+arXiv, 2021
+
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
 Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
