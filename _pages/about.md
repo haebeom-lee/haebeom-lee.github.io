@@ -28,7 +28,7 @@ My research interest includes:
 arXiv, 2021
 
 - <font size="4">Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning</font>
-[paper] \\
+[[paper]](https://arxiv.org/abs/2110.02600) \\
 Seanie Lee\*, **Hae Beom Lee\***, Juho Lee, Sung Ju Hwang \\
 (\*: equal contribution) \\
 arXiv, 2021
