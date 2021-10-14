@@ -34,7 +34,7 @@ Seanie Lee\*, **Hae Beom Lee\***, Juho Lee, Sung Ju Hwang \\
 arXiv, 2021
 
 - <font size="4">Meta-Learning Low Rank Covariance Factors for Energy-Based Deterministic Uncertainty</font>
-[paper] \\
+[[paper]](https://arxiv.org/abs/2110.06381) \\
 Jeffrey Ryan Willette, **Hae Beom Lee**, Juho Lee, Sung Ju Hwang \\
 arXiv, 2021
 
