@@ -11,8 +11,7 @@ I'm a Ph.D student at [Machine Learning and Artificial Intelligence (MLAI) lab](
 
 My research interest includes:
 - Meta-learning
-- Learning with noise and perturbation
- 
+- Transfer / Muti-task Learning 
 
 ## Awards
 - Global Ph.D Fellowship Program, 2019-2021
