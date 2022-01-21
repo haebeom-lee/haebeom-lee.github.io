@@ -11,6 +11,7 @@ I'm a Ph.D student at [Machine Learning and Artificial Intelligence (MLAI) lab](
 
 My research interest includes:
 - Meta-learning
+- Gradient-based Hyperparameter Optimization
 - Transfer / Muti-task Learning 
 
 ## Awards
