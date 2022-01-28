@@ -38,18 +38,18 @@ arXiv, 2018
 - <font size="4">Online Hyperparameter Meta-Learning with Hypergradient Distillation</font>
 [[paper]](http://arxiv.org/abs/2110.02508) \\
  **Hae Beom Lee**, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy Hospedales, Sung Ju Hwang \\
-<span style="color:darkred">**ICLR**</span> 2022 <span style="color:darkred">**(spotlight)**</span> (to appear)
+<span style="color:darkred">**ICLR**</span> 2022 <span style="color:darkred">**(spotlight)**</span>
 
 - <font size="4">Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning</font>
 [[paper]](https://arxiv.org/abs/2110.02600) \\
 Seanie Lee\*, **Hae Beom Lee\***, Juho Lee, Sung Ju Hwang \\
 (\*: equal contribution) \\
-<span style="color:darkred">**ICLR**</span> 2022 (to appear)
+<span style="color:darkred">**ICLR**</span> 2022
 
 - <font size="4">Meta-Learning Low Rank Covariance Factors for Energy-Based Deterministic Uncertainty</font>
 [[paper]](https://arxiv.org/abs/2110.06381) \\
 Jeffrey Ryan Willette, **Hae Beom Lee**, Juho Lee, Sung Ju Hwang \\
-<span style="color:darkred">**ICLR**</span> 2022 (to appear)
+<span style="color:darkred">**ICLR**</span> 2022
 
 - <font size="4">Large-Scale Meta-Learning with Continual Trajectory Shifting</font>
 [[paper]](https://arxiv.org/pdf/2102.07215.pdf) [[code]](https://github.com/JWoong148/ContinualTrajectoryShifting) \\
