@@ -38,7 +38,7 @@ arXiv, 2018
 - <font size="4">Online Hyperparameter Meta-Learning with Hypergradient Distillation</font>
 [[paper]](http://arxiv.org/abs/2110.02508) \\
  **Hae Beom Lee**, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy Hospedales, Sung Ju Hwang \\
-<span style="color:darkred">**ICLR**</span> 2022 (to appear) **Spotlight Presentation** (176/3391=5.2%)
+<span style="color:darkred">**ICLR**</span> 2022, **Spotlight Presentation** (176/3391=5.2%) (to appear)
 
 - <font size="4">Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning</font>
 [[paper]](https://arxiv.org/abs/2110.02600) \\
