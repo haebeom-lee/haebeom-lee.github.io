@@ -38,7 +38,7 @@ arXiv, 2018
 - <font size="4">Online Hyperparameter Meta-Learning with Hypergradient Distillation</font>
 [[paper]](http://arxiv.org/abs/2110.02508) \\
  **Hae Beom Lee**, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy Hospedales, Sung Ju Hwang \\
-<span style="color:darkred">**ICLR**</span> 2022, **Spotlight Presentation** (176/3391=5.2%) (to appear)
+<span style="color:darkred">**ICLR**</span> 2022, <span style="color:darkred">**Spotlight**</span> (to appear)
 
 - <font size="4">Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning</font>
 [[paper]](https://arxiv.org/abs/2110.02600) \\
@@ -61,7 +61,7 @@ Jaewoong Shin\*, **Hae Beom Lee\***, Boqing Gong, Sung Ju Hwang \\
 [[paper]](https://papers.nips.cc/paper/2020/file/84ddfb34126fc3a48ee38d7044e87276-Paper.pdf) [[code]](https://github.com/JWoong148/metaperturb) \\
 Jeongun Ryu\*, Jaewoong Shin\*, **Hae Beom Lee\***, Sung Ju Hwang \\
 (\*: equal contribution) \\
-<span style="color:darkred">**NeurIPS**</span> 2020, **Spotlight Presentation** (385/9454=4.1%)
+<span style="color:darkred">**NeurIPS**</span> 2020, <span style="color:darkred">**Spotlight**</span>
 
 - <font size="4">Meta-Learning for Short Utterance Speaker Recognition with Imbalance Length Pairs</font>
 [[paper]](https://arxiv.org/pdf/2004.02863.pdf) [[code]](https://github.com/seongmin-kye/meta-SR) \\
@@ -77,7 +77,7 @@ Seong Jin Park, Seungju Han, Ji-won Baek, Insoo Kim, Juhwan Song, **Hae Beom Lee
 [[paper]](https://openreview.net/pdf?id=rkeZIJBYvr) [[code]](https://github.com/haebeom-lee/l2b) \\
 **Hae Beom Lee\***, Hayeon Lee\*, Donghyun Na\*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang \\
 (\*: equal contribution) \\
-<span style="color:darkred">**ICLR**</span> 2020, **Oral Presentation** (48/2594=1.9%)
+<span style="color:darkred">**ICLR**</span> 2020, <span style="color:darkred">**Oral**</span>
 
 - <font size="4">Meta Dropout: Learning to Perturb Latent Features for Generalization</font>
 [[paper]](https://openreview.net/pdf?id=BJgd81SYwr) [[code]](https://github.com/haebeom-lee/metadrop) \\
