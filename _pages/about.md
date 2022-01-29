@@ -103,6 +103,6 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 
 ## Work Experiences
 
-- Research Intern (Informal, remote), The University of Edinburgh, 2021.10 - present (Advisor: Prof. Timothy Hospedales)
+- Research Intern, The University of Edinburgh, 2021.10 - present (Advisor: Prof. Timothy Hospedales. Remote and informal internship)
 - Research Intern, Samsung Research, Korea, 2019.12 - 2020.02
 - Research Intern, AITRICS, Korea, 2017. 12 - 2018. 02
