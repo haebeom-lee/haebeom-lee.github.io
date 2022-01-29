@@ -99,3 +99,10 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 [[paper]](https://arxiv.org/pdf/1708.00260.pdf)[[code]](https://github.com/haebeom-lee/amtfl) \\
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
+
+
+## Work Experiences
+
+- Research Intern (Informal, remote), The University of Edinburgh, 2021.10 - present (Advisor: Prof. Timothy Hospedales)
+- Research Intern, Samsung Research, Korea, 2019.12 - 2020.02
+- Research Intern, AITRICS, Korea, 2017. 12 - 2018. 02
