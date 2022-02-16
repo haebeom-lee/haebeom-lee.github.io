@@ -9,7 +9,9 @@ redirect_from:
 ---
 I'm a Ph.D candidate at [Machine Learning and Artificial Intelligence (MLAI) lab](https://www.mlai-kaist.com/) in KAIST, under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/). I finished my B.S. degree at UNIST in 2016, and M.S. degree at UNIST in 2018 under the supervision of Prof. Sung Ju Hwang. My expected graduation date is August 2022.
 
-My research interests include meta-learning, transfer learning and multi-task learning. The main research topic is **meta-learning**, where we aim to learn a model that generalizes over a distribution of tasks, rather than a distribution of data instances from a single task. Particularly, I have worked on extending the scope of meta-learning towards more realistic, practical, and large-scale scenarios. For future research agenda, I aim to combine or make use of meta-learning to solve other adjacent machine learning problems, including:
+My research interests include meta-learning, transfer learning and multi-task learning. The main research topic is **meta-learning**, where we aim to learn a model that generalizes over a distribution of tasks, rather than a distribution of data instances from a single task. Particularly, I have worked on extending the scope of meta-learning towards more realistic, practical, and large-scale scenarios. 
+
+For future research agenda, I aim to combine or make use of meta-learning to solve other adjacent machine learning problems, including:
 
 - Meta Reinforcement Learning
 - Meta Continual Learning
