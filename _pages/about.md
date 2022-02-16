@@ -15,6 +15,10 @@ My research interests include meta-learning, transfer learning and multi-task le
 - Meta Continual Learning
 - Gradient-based Hyperparameter Optimizaion 
 
+__Contact:__ haebeom dot lee at kaist dot ac dot kr
+
+
+
 ## Awards
 - Global Ph.D Fellowship Program, 2019-2021
 - Google Ph.D Fellowship Program 2021
