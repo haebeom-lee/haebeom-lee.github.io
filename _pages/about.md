@@ -24,6 +24,10 @@ haebeom dot lee at kaist dot ac dot kr
 
 ## Preprints
 
+- <font size="4">Meta Mirror Descent: Optimiser Learning for Fast Convergence</font>
+[[paper]](https://arxiv.org/pdf/2203.02711.pdf) \\
+Boyan Gao, Henry Gouk, **Hae Beom Lee**, Timothy M. Hospedales \\
+arXiv, 2022
 
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
@@ -40,7 +44,7 @@ arXiv, 2018
 
 - <font size="4">Online Hyperparameter Meta-Learning with Hypergradient Distillation</font>
 [[paper]](http://arxiv.org/abs/2110.02508) \\
- **Hae Beom Lee**, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy Hospedales, Sung Ju Hwang \\
+ **Hae Beom Lee**, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy M. Hospedales, Sung Ju Hwang \\
 <span style="color:darkred">**ICLR**</span> 2022 <span style="color:darkred">**(spotlight)**</span>
 
 - <font size="4">Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning</font>
