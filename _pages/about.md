@@ -94,7 +94,7 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 - <font size="4">Meta Mirror Descent: Optimiser Learning for Fast Convergence</font>
 [[paper]](https://arxiv.org/pdf/2203.02711.pdf) \\
 Boyan Gao, Henry Gouk, **Hae Beom Lee**, Timothy M. Hospedales \\
-GroundedML: Workshop on Anchoring Machine Learning in Classical Algorithmic Theory 2022
+ICLR 2022 Workshop on GroundedML
 
 
 ## Preprints
