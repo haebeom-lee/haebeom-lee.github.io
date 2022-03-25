@@ -22,24 +22,6 @@ haebeom dot lee at kaist dot ac dot kr
 - Google Ph.D Fellowship Program 2021
  
 
-## Preprints
-
-- <font size="4">Meta Mirror Descent: Optimiser Learning for Fast Convergence</font>
-[[paper]](https://arxiv.org/pdf/2203.02711.pdf) \\
-Boyan Gao, Henry Gouk, **Hae Beom Lee**, Timothy M. Hospedales \\
-arXiv, 2022
-
-- <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
-[[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
-Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
-arXiv, 2020
-
-- <font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
-[[paper]](https://arxiv.org/pdf/1805.10896.pdf)[[code]](https://github.com/OpenXAIProject/Variational_Dropouts) \\
-Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
-arXiv, 2018
- 
-
 ## Conference Publications
 
 - <font size="4">Online Hyperparameter Meta-Learning with Hypergradient Distillation</font>
@@ -106,6 +88,26 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 [[paper]](https://arxiv.org/pdf/1708.00260.pdf)[[code]](https://github.com/haebeom-lee/amtfl) \\
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
+
+## Workshop Publications
+
+- <font size="4">Meta Mirror Descent: Optimiser Learning for Fast Convergence</font>
+[[paper]](https://arxiv.org/pdf/2203.02711.pdf) \\
+Boyan Gao, Henry Gouk, **Hae Beom Lee**, Timothy M. Hospedales \\
+GroundedML: Workshop on Anchoring Machine Learning in Classical Algorithmic Theory 2022
+
+
+## Preprints
+
+- <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
+[[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
+Sung Min Kye, **Hae Beom Lee**, Hoirin Kim, Sung Ju Hwang \\
+arXiv, 2020
+
+- <font size="4">Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout</font>
+[[paper]](https://arxiv.org/pdf/1805.10896.pdf)[[code]](https://github.com/OpenXAIProject/Variational_Dropouts) \\
+Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
+arXiv, 2018
 
 
 ## Work Experiences
