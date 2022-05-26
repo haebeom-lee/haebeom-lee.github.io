@@ -89,14 +89,6 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
 
-## Workshop Publications
-
-- <font size="4">Meta Mirror Descent: Optimiser Learning for Fast Convergence</font>
-[[paper]](https://arxiv.org/pdf/2203.02711.pdf) \\
-Boyan Gao, Henry Gouk, **Hae Beom Lee**, Timothy M. Hospedales \\
-ICLR 2022 Workshop on GroundedML
-
-
 ## Preprints
 
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
@@ -110,8 +102,3 @@ Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang
 arXiv, 2018
 
 
-## Work Experiences
-
-- Research Intern, The University of Edinburgh, 2021.10 - present (Advisor: **Prof. Timothy Hospedales**.)
-- Research Intern, Samsung Research, Korea, 2019.12 - 2020.02
-- Research Intern, AITRICS, Korea, 2017. 12 - 2018. 02
