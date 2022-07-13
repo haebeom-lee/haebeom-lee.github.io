@@ -20,6 +20,7 @@ haebeom dot lee at kaist dot ac dot kr
 ## Awards
 - Global Ph.D Fellowship Program, 2019-2021
 - Google Ph.D Fellowship Program 2021
+- Outstanding reviewer (ICML2020 - Top 33%, ICML2022 - Top 10%)
  
 
 ## Conference Publications
