@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a postdoctoral researcher at Mila and Université de Montréal under the supervision of Prof. Yoshua Bengio. I earned Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
+I'm a postdoctoral researcher at Mila and Université de Montréal under the supervision of [Prof. Yoshua Bengio](https://yoshuabengio.org/). I earned Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
 
 ## Research Interest
 My research interest include
