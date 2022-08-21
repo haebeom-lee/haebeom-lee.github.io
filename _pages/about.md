@@ -7,10 +7,16 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a Ph.D candidate at [Machine Learning and Artificial Intelligence (MLAI) lab](https://www.mlai-kaist.com/) in KAIST, under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/). I finished my B.S. degree at UNIST in 2016, and M.S. degree at UNIST in 2018 under the supervision of Prof. Sung Ju Hwang. My expected graduation date is August 2022.
+I'm a postdoctoral researcher at Mila and Université de Montréal under the supervision of Prof. Yoshua Bengio. I earned Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
 
 ## Research Interest
-The ultimate goal of my research is contributing to human-level __artificial general intelligence__ (AGI). One of the most central aspects of AGI is its ability to generalize to novel tasks, and in order to understand this ability I have explored __meta-learning__, a higher-level learning framework that allows a model to learn to generalize over a distribution of tasks rather than generalize within a single task. During my Ph.D. study I have tried to extend the scope of meta-learning towards more realistic, practical, and large-scale scenarios. For future research agenda, I aim to study __meta-reinforcement learning__ (meta-RL) and __meta-continual learning__ (meta-CL) to better understand the way human being interact with the environments. Based on those understandings I aim to develop a human-level RL agent that can generalize to out-of-distribution tasks and continually learn from them. This is closely related to the concept of __system 2 deep learning__ (DL), which, from the meta-learning point of view, can be realized by incorporating higher-level __cognitive__ concepts into the __meta-knowledge structure__.
+My research interest include
+- System 2 Deep Learning
+- Generative Flow Networks (GFlowNet)
+- Causality
+- Out-of-Distribution Generalization
+- Bayesian Inference and Learning
+- Meta-Learning / Multi-Task Learning / Transfer Learning
 
 ## Contact
 haebeom dot lee at kaist dot ac dot kr
