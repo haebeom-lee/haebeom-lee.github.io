@@ -33,7 +33,7 @@ haebeom dot lee at kaist dot ac dot kr
 
 - <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Decomposition</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
-**Hae Beom Lee\***, Dong Bok Lee\* Sung Ju Hwang \\
+**Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
 (\*: equal contribution) \\
 arXiv, 2022
 
