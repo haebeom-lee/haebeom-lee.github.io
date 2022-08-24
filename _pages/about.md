@@ -27,7 +27,15 @@ haebeom dot lee at kaist dot ac dot kr
 - Global Ph.D Fellowship Program, 2019-2021
 - Google Ph.D Fellowship Program 2021
 - Outstanding reviewer (ICML2020 - Top 33%, ICML2022 - Top 10%)
- 
+
+
+## New Preprints
+
+- <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Decomposition</font>
+[[paper]](http://arxiv.org/abs/2208.10494) \\
+**Hae Beom Lee\***, Dong Bok Lee\* Sung Ju Hwang \\
+(\*: equal contribution) \\
+arXiv, 2022
 
 ## Conference Publications
 
@@ -96,7 +104,7 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
 
-## Preprints
+## Old Preprints
 
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
