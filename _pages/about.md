@@ -31,7 +31,7 @@ haebeom dot lee at kaist dot ac dot kr
 
 ## New Preprints
 
-- <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Decomposition</font>
+- <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
 **Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
 (\*: equal contribution) \\
