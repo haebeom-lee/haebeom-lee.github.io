@@ -31,6 +31,12 @@ haebeom dot lee at kaist dot ac dot kr
 
 ## New Preprints
 
+- <font size="4">Delta-AI: Local objectives for amortized inference in sparse graphical models</font>
+[[paper]](https://arxiv.org/abs/2310.02423) \\
+Jean-Pierre René Falet*, **Hae Beom Lee\***, Nikolay Malkin\*, Chen Sun, Dragos Secrieru, Dinghuai Zhang, Guillaume Lajoie, Yoshua Bengio \\
+(\*: equal contribution) \\
+arXiv, 2023
+
 - <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
 **Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
