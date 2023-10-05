@@ -31,7 +31,7 @@ haebeom dot lee at kaist dot ac dot kr
 
 ## New Preprints
 
-- <font size="4">Delta-AI: Local objectives for amortized inference in sparse graphical models</font>
+- <font size="4">Delta-AI: Local Objectives for Amortized Inference in Sparse Graphical Models</font>
 [[paper]](https://arxiv.org/abs/2310.02423) \\
 Jean-Pierre René Falet*, **Hae Beom Lee\***, Nikolay Malkin\*, Chen Sun, Dragos Secrieru, Dinghuai Zhang, Guillaume Lajoie, Yoshua Bengio \\
 (\*: equal contribution) \\
