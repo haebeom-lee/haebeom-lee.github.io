@@ -7,16 +7,15 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I'm a postdoctoral researcher at Mila and Université de Montréal under the supervision of [Prof. Yoshua Bengio](https://yoshuabengio.org/). I earned Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
+I'm a research engineer at DeepAuto. Prior to this, I was a postdoctoral researcher at Mila and Université de Montréal under the supervision of [Prof. Yoshua Bengio](https://yoshuabengio.org/). I earned Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
 
 ## Research Interest
 My research interest include
 - System 2 Deep Learning
 - Generative Flow Networks (GFlowNet)
-- Causality
-- Out-of-Distribution Generalization
 - Bayesian Inference and Learning
 - Meta-Learning / Multi-Task Learning / Transfer Learning
+- AutoML
 
 ## Contact
 haebeom dot lee at kaist dot ac dot kr
