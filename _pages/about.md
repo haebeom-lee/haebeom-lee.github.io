@@ -38,7 +38,7 @@ arXiv, 2022
 
 - <font size="4">Cost-Sensitive Multi-Fidelity Bayesian Optimization with Transfer of Learning Curve Extrapolation</font>
 [[paper]](https://arxiv.org/abs/2405.17918) \\
-Dong Bok Lee, Aoxuan Silvia Zhang\*, Byungjoo Kim\*, Junhyeon Park\*, Juho Lee, Sung Ju Hwang, **Hae Beom Lee\*** \\
+Dong Bok Lee, Aoxuan Silvia Zhang\*, Byungjoo Kim\*, Junhyeon Park\*, Juho Lee, Sung Ju Hwang, **Hae Beom Lee** \\
 (\*: equal contribution) \\
 arXiv, 2024
 
