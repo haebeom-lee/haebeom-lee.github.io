@@ -12,9 +12,10 @@ I'm an assitant professor in the School of Electrical Engineering at Korea Unive
 
 ## Research Interest
 My research interest include
+- Large Language Model Reasoning
 - System 2 Deep Learning
-- Meta-Learning
-- AutoML and Hyperparameter Optimization
+- Meta-Learning / Bi-level Optimization
+- AutoML / Hyperparameter Optimization
 - Bayesian Inference and Learning
 - Generative Flow Networks (GFlowNet)
 - Transfer Learning / Multi-Task Learning / Continual Learning
@@ -23,10 +24,16 @@ My research interest include
 I am looking for self-motivated students with various backgrounds, like electrical engineering, computer science, or mathematics.
 If you are interested in the topics above and doing research together, please feel free to reach out through my email. 
 - For the **prospective undergraduate interns**, you don't need to have strong backgrounds on AI or machine learining. How enthusiastic you are is probably the most important.
-- For the **prospective master**, I may expect you to have some backgrounds on AI or machine learning, e.g., having interned at other AI/ML labs or company, or having good grades in AI-related courses.
-- For the **prospective PhD**, I expect you to have published at least one first-authored paper to top-tier machine learning conferences, e.g., NeurIPS, ICML, ICLR, ACL, EMNLP, CVPR, ICCV, etc.
+- For the **prospective master students**, I may expect you to have some backgrounds on AI or machine learning, e.g., having interned at other AI/ML labs or company, or having good grades in AI-related courses.
+- For the **prospective PhD students**, I expect you to have published at least one first-authored paper to top-tier machine learning conferences, e.g., NeurIPS, ICML, ICLR, ACL, EMNLP, CVPR, ICCV, etc.
 
-In any cases, I strongly recommend you to have an internship period in our lab for at least 3 months.
+In case of applying for our lab as a graduate student, I strongly recommend you to have an internship period in our lab for at least 3 months, before applying.
+
+## For the students taking Engineering Design I or II ##
+Please feel free to reach out if you are interested or if you'd like to have an experience in machine learning or deep learning. I can provide the following for one semester:
+- An opportunity to do actual research together on some recent topics in machine learning and deep learning.
+- An opportunity to write a research paper.
+- Google Colab pro plus account provided for 3 months, for all students.
 
 ## Contact
 haebeomlee dot korea dot ac dot kr
