@@ -9,18 +9,27 @@ redirect_from:
 ---
 I'm an assitant professor in the School of Electrical Engineering at Korea University. Prior to this, I was a postdoctoral researcher at KAIST under the supervision of [Prof. Juho Lee](https://juho-lee.github.io/), and at Mila and Université de Montréal under the supervision of [Prof. Yoshua Bengio](https://yoshuabengio.org/). I earned my Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
 
+
 ## Research Interest
 My research interest include
 - System 2 Deep Learning
-- Generative Flow Networks (GFlowNet)
+- Meta-Learning
+- AutoML and Hyperparameter Optimization
 - Bayesian Inference and Learning
-- Meta-Learning / Multi-Task Learning / Transfer Learning
-- AutoML
+- Generative Flow Networks (GFlowNet)
+- Transfer Learning / Multi-Task Learning / Continual Learning
+
+## For the prospective students ##
+I am looking for self-motivated students with various backgrounds, like electrical engineering, computer science, or mathematics.
+If you are interested in the topics above and doing research together, please feel free to reach out through my email. 
+- For the **prospective undergraduate interns**, you don't need to have strong backgrounds on AI or machine learining. How enthusiastic you are is probably the most important.
+- For the **prospective master**, I may expect you to have some backgrounds on AI or machine learning, e.g., having interned at other AI/ML labs or company, or having good grades in AI-related courses.
+- For the **prospective PhD**, I expect you to have published at least one first-authored paper to top-tier machine learning conferences, e.g., NeurIPS, ICML, ICLR, ACL, EMNLP, CVPR, ICCV, etc.
+
+In any cases, I strongly recommend you to have an internship period in our lab for at least 3 months.
 
 ## Contact
-haebeom dot lee at kaist dot ac dot kr
-
-
+haebeomlee dot korea dot ac dot kr
 
 ## Awards
 - Global Ph.D Fellowship Program, 2019-2021
@@ -29,6 +38,11 @@ haebeom dot lee at kaist dot ac dot kr
 
 
 ## New Preprints
+
+- <font size="4">Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks</font> \\
+Dongwoo Lee\*, Dong Bok Lee\*, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim,  **Hae Beom Lee** \\
+(\*: equal contribution) \\
+2025
 
 - <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
