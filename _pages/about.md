@@ -46,11 +46,6 @@ haebeomlee dot korea dot ac dot kr
 
 ## New Preprints
 
-- <font size="4">Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks</font> \\
-Dongwoo Lee\*, Dong Bok Lee\*, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim,  **Hae Beom Lee** \\
-(\*: equal contribution) \\
-2025
-
 - <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
 **Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
@@ -64,6 +59,11 @@ Dong Bok Lee, Aoxuan Silvia Zhang\*, Byungjoo Kim\*, Junhyeon Park\*, Juho Lee, 
 arXiv, 2024
 
 ## Conference Publications
+
+- <font size="4">Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks</font>
+Dongwoo Lee\*, Dong Bok Lee\*, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim,  **Hae Beom Lee** \\
+(\*: equal contribution) \\
+<span style="color:darkred">**ICML**</span> 2025
 
 - <font size="4">Delta-AI: Local Objectives for Amortized Inference in Sparse Graphical Models</font>
 [[paper]](https://arxiv.org/abs/2310.02423) \\
