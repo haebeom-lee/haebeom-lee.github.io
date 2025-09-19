@@ -29,12 +29,6 @@ If you are interested in the topics above and doing research together, please fe
 
 In case of applying for our lab as a graduate student, I strongly recommend you to have an internship period in our lab for at least 3 months, before applying.
 
-## For the students taking Engineering Design I or II ##
-Please feel free to reach out if you are interested or if you'd like to have an experience in machine learning or deep learning. I can provide the following for one semester:
-- An opportunity to do actual research together on some recent topics in machine learning and deep learning.
-- An opportunity to write a research paper.
-- Google Colab pro plus account provided for 3 months, for all students.
-
 ## Contact
 haebeomlee dot korea dot ac dot kr
 
@@ -60,7 +54,13 @@ arXiv, 2024
 
 ## Conference Publications
 
+- <font size="4">Cost-Sensitive Freeze-thaw Bayesian Optimization for Efficient Hyperparameter Tuning</font>
+[[paper]](https://arxiv.org/abs/2405.17918) \\
+Dong Bok Lee, Aoxuan Silvia Zhang, Byungjoo Kim, Junhyeon Park, Steven Adriaensen, Juho Lee, Sung Ju Hwang, **Hae Beom Lee** \\
+<span style="color:darkred">**NeurIPS**</span> 2025
+
 - <font size="4">Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks</font>
+[[paper]](https://arxiv.org/abs/2505.23032) \\
 Dongwoo Lee\*, Dong Bok Lee\*, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim,  **Hae Beom Lee** \\
 (\*: equal contribution) \\
 <span style="color:darkred">**ICML**</span> 2025
