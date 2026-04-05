@@ -44,14 +44,14 @@ haebeomlee dot korea dot ac dot kr
 [[paper]]([http://arxiv.org/abs/2208.10494](https://arxiv.org/abs/2602.03358)) \\
 Junmo Cho\*, Suhan Kim\*, Sangjune An\*, Minsu Kim, Dong Bok Lee, Heejun Lee, Sung Ju Hwang, **Hae Beom Lee** \\
 (\*: equal contribution) \\
-arXiv, 2022
+arXiv, 2026
 
 
 - <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
 **Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
 (\*: equal contribution) \\
-arXiv, 2026
+arXiv, 2022
 
 ## Conference Publications
 
