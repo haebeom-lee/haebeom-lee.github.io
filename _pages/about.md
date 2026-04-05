@@ -46,13 +46,6 @@ Junmo Cho\*, Suhan Kim\*, Sangjune An\*, Minsu Kim, Dong Bok Lee, Heejun Lee, Su
 (\*: equal contribution) \\
 arXiv, 2026
 
-
-- <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
-[[paper]](http://arxiv.org/abs/2208.10494) \\
-**Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
-(\*: equal contribution) \\
-arXiv, 2022
-
 ## Conference Publications
 
 - <font size="4">Cost-Sensitive Freeze-thaw Bayesian Optimization for Efficient Hyperparameter Tuning</font>
@@ -138,6 +131,12 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 <span style="color:darkred">**ICML**</span> 2018
 
 ## Old Preprints
+
+- <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
+[[paper]](http://arxiv.org/abs/2208.10494) \\
+**Hae Beom Lee\***, Dong Bok Lee\*, Sung Ju Hwang \\
+(\*: equal contribution) \\
+arXiv, 2022
 
 - <font size="4">Meta-Learned Confidence for Few-shot Learning</font>
 [[paper]](https://arxiv.org/pdf/2002.12017.pdf)[[code]](https://github.com/seongmin-kye/MCT) \\
