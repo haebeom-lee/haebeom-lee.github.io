@@ -41,7 +41,7 @@ haebeomlee dot korea dot ac dot kr
 ## New Preprints
 
 - <font size="4">GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer</font>
-[[paper]]([http://arxiv.org/abs/2208.10494](https://arxiv.org/abs/2602.03358)) \\
+[[paper]](https://arxiv.org/abs/2602.03358) \\
 Junmo Cho\*, Suhan Kim\*, Sangjune An\*, Minsu Kim, Dong Bok Lee, Heejun Lee, Sung Ju Hwang, **Hae Beom Lee** \\
 (\*: equal contribution) \\
 arXiv, 2026
