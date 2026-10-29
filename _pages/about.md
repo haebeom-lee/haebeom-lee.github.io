@@ -1,44 +1,61 @@
 ---
 permalink: /
 title: "About me"
-excerpt: "About me"
+excerpt: "System 2 intelligence, world models, and scientific discovery"
 author_profile: true
 redirect_from:
   - /about/
   - /about.html
 ---
-I'm an assitant professor in the School of Electrical Engineering at Korea University. Prior to this, I was a postdoctoral researcher at KAIST under the supervision of [Prof. Juho Lee](https://juho-lee.github.io/), and at Mila and Université de Montréal under the supervision of [Prof. Yoshua Bengio](https://yoshuabengio.org/). I earned my Ph.D degree from KAIST under the supervision of [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
 
+I am an Assistant Professor in the School of Electrical Engineering at Korea University. Previously, I was a postdoctoral researcher at KAIST, working with [Prof. Juho Lee](https://juho-lee.github.io/), and at Mila and Université de Montréal, working with [Prof. Yoshua Bengio](https://yoshuabengio.org/). I received my Ph.D. from KAIST, where I was advised by [Prof. Sung Ju Hwang](http://www.sungjuhwang.com/).
 
-## Research Interest
-My research interest include
-- Large Language Model Reasoning
-- System 2 Deep Learning
-- Meta-Learning / Bi-level Optimization
-- AutoML / Hyperparameter Optimization
-- Bayesian Inference and Learning
-- Generative Flow Networks (GFlowNet)
-- Transfer Learning / Multi-Task Learning / Continual Learning
+## Research Vision
 
-## For the prospective students ##
-I am looking for self-motivated students with various backgrounds, like electrical engineering, computer science, or mathematics.
-If you are interested in the topics above and doing research together, please feel free to reach out through my email. 
-- For the **prospective undergraduate interns**, you don't need to have strong backgrounds on AI or machine learining. How enthusiastic you are is probably the most important.
-- For the **prospective master students**, I may expect you to have some backgrounds on AI or machine learning, e.g., having interned at other AI/ML labs or company, or having good grades in AI-related courses.
-- For the **prospective PhD students**, I expect you to have published at least one first-authored paper to top-tier machine learning conferences, e.g., NeurIPS, ICML, ICLR, ACL, EMNLP, CVPR, ICCV, etc.
+**I want to build AI systems that can discover how the world works, accumulate what they learn, and reason with that knowledge.**
 
-In case of applying for our lab as a graduate student, I strongly recommend you to have an internship period in our lab for at least 3 months, before applying.
+My research is motivated by a fundamental question: *How can an AI system go beyond recognizing patterns to understand the mechanisms behind its observations, and use that understanding to solve new problems?* I view this as an important step toward **System 2 intelligence**: deliberate, evidence-grounded reasoning that can formulate hypotheses, evaluate alternatives, recognize uncertainty, and revise beliefs when new evidence arrives. The goal is not simply to make language models generate longer reasoning traces, but to make their reasoning more reliable, grounded, and adaptive.
+
+I believe **world models** are central to this goal. By a world model, I mean a structured and uncertainty-aware representation of how a system works: its causal relationships, relational rules, mathematical laws, and mechanisms of change. Rather than storing experience only as unstructured text or implicit model parameters, I am interested in **explicit models that an agent can inspect, test, revise, compose, and reuse** across different problems.
+
+Ultimately, I envision agents that operate in a continuous loop: **propose hypotheses, make predictions, seek informative evidence, update their world models, and use the resulting knowledge to reason and act.** In this view, scientific discovery, learning from experience, and intelligent planning are closely connected aspects of the same problem.
+
+## Research Directions
+
+**1. Discovering world models from data and interaction.**  
+How can AI infer the rules and mechanisms governing an unfamiliar system from limited observations? I study the discovery of mathematical, causal, and relational models, including the use of language models to propose hypotheses, probabilistic inference to evaluate them, and active experimentation to distinguish between competing explanations.
+
+**2. Accumulating, revising, and reusing knowledge.**  
+An intelligent system should learn more than isolated solutions to individual tasks. I am interested in how agents can consolidate experiences into persistent, structured knowledge; reconcile new evidence with prior beliefs; and identify and correct mistaken assumptions. Crucially, agents should be able to build on existing scientific knowledge, determine which known mechanisms apply to a new system, and discover what remains unknown. The aim is to develop world models that can be revised, composed, and reused instead of being reconstructed from scratch for every task.
+
+**3. Reasoning and planning with world models.**  
+A world model should do more than explain past observations: it should guide future decisions. I investigate how agents can use learned mechanisms and calibrated uncertainty to reason through unfamiliar situations, select informative actions or experiments, and plan toward goals. This includes developing agents that can improve how they search, reason, and learn from their own experience.
+
+My work draws on Bayesian inference, language models, structured representations, and sequential decision-making. These are tools toward the broader goal of building AI that **learns reusable knowledge about the world and reasons with it**.
+
+## Prospective Students
+
+I welcome motivated students from electrical engineering, computer science, mathematics, and related fields who are excited by questions about intelligence, reasoning, and learning. If these research directions interest you, please feel free to contact me.
+
+- **Undergraduate interns:** Prior experience in AI or machine learning is not required. Curiosity, initiative, and enthusiasm for research matter most.
+- **Master's students:** I generally expect some background in AI or machine learning, demonstrated through coursework, research internships, or relevant experience.
+- **Ph.D. students:** I expect applicants to have at least one first-authored paper at a leading AI/ML conference, such as NeurIPS, ICML, ICLR, ACL, EMNLP, CVPR, or ICCV.
+
+For prospective graduate students, I strongly recommend completing a research internship in my group for **at least three months** before applying.
 
 ## Contact
-haebeomlee dot korea dot ac dot kr
+
+haebeomlee [at] korea [dot] ac [dot] kr
 
 ## Awards
-- Global Ph.D Fellowship Program, 2019-2021
-- Google Ph.D Fellowship Program 2021
-- Outstanding reviewer (ICML2020 - Top 33%, ICML2022 - Top 10%)
 
+- Global Ph.D. Fellowship Program, 2019–2021
+- Google Ph.D. Fellowship Program, 2021
+- Outstanding Reviewer, ICML 2020 (Top 33%) and ICML 2022 (Top 10%)
 
-## New Preprints
+## Publications
+
+### Recent Preprints
 
 - <font size="4">GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer</font>
 [[paper]](https://arxiv.org/abs/2602.03358) \\
@@ -57,7 +74,7 @@ JooKyung Yuh, Byungmin Park\*, Eunseo Choi\*, Jinheon Baek, Junmo Cho, Kyu Hyun 
 (\*: equal contribution as second authors, †: co-corresponding authors) \\
 arXiv, 2026
 
-## Conference Publications
+### Conference Publications
 
 - <font size="4">ProPolar: Progressive Polar Decomposition for Implicit Neural Representations</font>
 [[paper]](https://neurips.cc/virtual/2026/poster/148388) \\
@@ -147,7 +164,7 @@ Jay Heo\*, **Hae Beom Lee\***, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang
 **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 <span style="color:darkred">**ICML**</span> 2018
 
-## Old Preprints
+### Earlier Preprints
 
 - <font size="4">Dataset Condensation with Latent Space Knowledge Factorization and Sharing</font>
 [[paper]](http://arxiv.org/abs/2208.10494) \\
@@ -164,5 +181,3 @@ arXiv, 2020
 [[paper]](https://arxiv.org/pdf/1805.10896.pdf)[[code]](https://github.com/OpenXAIProject/Variational_Dropouts) \\
 Juho Lee, Saehoon Kim, Jaehong Yoon, **Hae Beom Lee**, Eunho Yang, Sung Ju Hwang \\
 arXiv, 2018
-
-
