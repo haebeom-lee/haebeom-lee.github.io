@@ -469,7 +469,36 @@ article.page:has(.hb) .page__title { display: none; }
   color: var(--hb-ink);
   background: var(--hb-paper);
 }
-.page__content .hb-tools { margin-top: 1.25rem !important; color: var(--hb-text); font-size: 0.98rem; }
+.page__content .hb-approach {
+  font-family: var(--hb-serif);
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: var(--hb-ink);
+  border-left: 3px solid var(--hb-d1);
+  padding: 0.1rem 0 0.1rem 1rem;
+  margin: -0.25rem 0 1.5rem !important;
+  max-width: 40rem;
+}
+.page__content .hb-tags li.hb-tag--later {
+  border-style: dashed;
+  color: var(--hb-muted);
+  background: transparent;
+}
+.page__content .hb-dir-legend {
+  margin-top: 0.75rem !important;
+  font-size: 0.85rem;
+  color: var(--hb-muted);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.page__content .hb-dir-legend__swatch {
+  display: inline-block;
+  width: 1.6rem;
+  height: 0.9rem;
+  border: 1px dashed var(--hb-muted);
+  border-radius: 999px;
+}
 
 /* Students */
 .page__content .hb-req { margin: 1rem 0; border-top: 1px solid var(--hb-rule); }
@@ -683,39 +712,41 @@ article.page:has(.hb) .page__title { display: none; }
 
 <section class="hb-directions" id="research-directions" aria-labelledby="directions-title">
   <h2 class="hb-h2" id="directions-title">Research directions</h2>
+  <p class="hb-approach">Language models bring broad prior knowledge to propose hypotheses; probabilistic inference holds those hypotheses accountable to evidence.</p>
   <div class="hb-dir-grid">
     <article class="hb-dir hb-dir--d1">
       <p class="hb-dir__steps">Loop steps 1–3</p>
-      <h3 class="hb-dir__title"><span class="hb-dir__n">1</span>Discovering world models from data and interaction</h3>
-      <p class="hb-dir__q">How can AI infer the rules and mechanisms of an unfamiliar system from limited observations?</p>
-      <ul class="hb-tags"><li>LLM-proposed hypotheses</li><li>Probabilistic inference</li><li>Active experimentation</li></ul>
+      <h3 class="hb-dir__title"><span class="hb-dir__n">1</span>Discovering explicit world models</h3>
+      <p class="hb-dir__q">How can AI infer the laws and mechanisms of an unfamiliar system from limited observations and interaction?</p>
+      <ul class="hb-tags"><li>Causal models</li><li>Relational rules</li><li>Action laws</li><li>Active experimentation</li></ul>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
-        <p>I study the discovery of mathematical, causal, and relational models, including the use of language models to propose hypotheses, probabilistic inference to evaluate them, and active experimentation to distinguish between competing explanations.</p>
+        <p>I study the discovery of causal, relational, and mathematical models, as well as the laws that govern how actions change the world: when an action applies and what it does. Language models propose candidate explanations, probabilistic inference evaluates them against the data, and active experimentation selects the observations that best distinguish between competing explanations.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d2">
       <p class="hb-dir__steps">Loop step 4</p>
-      <h3 class="hb-dir__title"><span class="hb-dir__n">2</span>Accumulating, revising, and reusing knowledge</h3>
+      <h3 class="hb-dir__title"><span class="hb-dir__n">2</span>Revising and building on knowledge</h3>
       <p class="hb-dir__q">How can agents turn experience into lasting knowledge that they can correct and build on?</p>
-      <ul class="hb-tags"><li>Structured knowledge</li><li>Belief revision</li><li>Reuse of known mechanisms</li></ul>
+      <ul class="hb-tags"><li>Assumption-level revision</li><li>Growing theories</li><li>Reuse of known mechanisms</li></ul>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
-        <p>An intelligent system should learn more than isolated solutions to individual tasks. I am interested in how agents can consolidate experiences into persistent, structured knowledge; reconcile new evidence with prior beliefs; and identify and correct mistaken assumptions. Crucially, agents should be able to build on existing scientific knowledge, determine which known mechanisms apply to a new system, and discover what remains unknown. The aim is to develop world models that can be revised, composed, and reused instead of being reconstructed from scratch for every task.</p>
+        <p>An intelligent system should learn more than isolated solutions to individual tasks. I am interested in how agents can consolidate experiences into persistent, structured knowledge; reconcile new evidence with prior beliefs; and identify and correct mistaken assumptions while preserving what they already explain well. Crucially, agents should be able to build on existing scientific knowledge, determine which known mechanisms apply to a new system, and discover what remains unknown. The aim is to develop world models that can be revised, composed, and reused instead of being reconstructed from scratch for every task.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d3">
       <p class="hb-dir__steps">Loop step 5</p>
       <h3 class="hb-dir__title"><span class="hb-dir__n">3</span>Reasoning and planning with world models</h3>
-      <p class="hb-dir__q">How can learned mechanisms and calibrated uncertainty guide what an agent does next?</p>
-      <ul class="hb-tags"><li>Calibrated uncertainty</li><li>Experiment selection</li><li>Planning</li><li>Self-improving agents</li></ul>
+      <p class="hb-dir__q">How can learned laws and their uncertainty guide what an agent does next?</p>
+      <ul class="hb-tags"><li>Planning with learned laws</li><li>Amortized inference</li><li class="hb-tag--later" title="Longer-term direction">Self-improving agents</li></ul>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
-        <p>A world model should do more than explain past observations: it should guide future decisions. I investigate how agents can use learned mechanisms and calibrated uncertainty to reason through unfamiliar situations, select informative actions or experiments, and plan toward goals. This includes developing agents that can improve how they search, reason, and learn from their own experience.</p>
+        <p>A world model should do more than explain past observations: it should guide future decisions. I study how agents can plan with the laws they have discovered, for example in open-ended game environments, and how amortized Bayesian inference can deliver fast, calibrated predictions so that uncertainty informs every decision.</p>
+        <p>In the longer term, I am interested in self-improving agents: agents that improve not only their world models but also how they discover, reason, and learn from their own experience.</p>
       </details>
     </article>
   </div>
-  <p class="hb-tools">My work draws on Bayesian inference, language models, structured representations, and sequential decision-making, as tools toward AI that <strong>learns reusable knowledge about the world and reasons with it</strong>.</p>
+  <p class="hb-dir-legend"><span class="hb-dir-legend__swatch" aria-hidden="true"></span>Dashed tags mark longer-term directions.</p>
 </section>
 
 <section class="hb-students" id="prospective-students" aria-labelledby="students-title">
