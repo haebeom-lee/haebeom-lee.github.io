@@ -230,7 +230,9 @@ papers:
 }
 
 /* ---------- Site-wide ---------- */
-html { font-size: 16px; }
+/* Base size: ~125% of the browser default on desktop (theme default was 16/18px) */
+html { font-size: 17px; }
+@media (min-width: 48em) { html { font-size: 20px; } }
 body {
   font-family: var(--hb-sans);
   color: var(--hb-text);
@@ -275,7 +277,7 @@ a:focus-visible, summary:focus-visible {
   color: var(--hb-ink);
 }
 .author__bio { color: var(--hb-muted); font-size: 0.9rem; line-height: 1.45; }
-.author__urls { font-size: 0.85rem; }
+.author__urls, .author__urls li, .author__urls a { font-size: 0.8rem; }
 
 /* Home page: the hero statement replaces the generic "About me" title */
 article.page:has(.hb) .page__title { display: none; }
@@ -326,7 +328,7 @@ article.page:has(.hb) .page__title { display: none; }
   background: var(--hb-wash);
   border-radius: 6px;
 }
-.page__content .hb-loop__svg { display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto; }
+.page__content .hb-loop__svg { display: block; width: 100%; max-width: 35rem; height: auto; margin: 0 auto; }
 .page__content .hb-arc { fill: none; stroke-width: 3; stroke-linecap: round; }
 .page__content .hb-arc--d1 { stroke: var(--hb-d1); }
 .page__content .hb-arc--d2 { stroke: var(--hb-d2); }
