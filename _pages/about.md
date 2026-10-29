@@ -230,9 +230,9 @@ papers:
 }
 
 /* ---------- Site-wide ---------- */
-/* Base size: ~125% of the browser default on desktop (theme default was 16/18px) */
-html { font-size: 17px; }
-@media (min-width: 48em) { html { font-size: 20px; } }
+/* Base size: ~120% of the browser default on desktop (theme default was 16/18px) */
+html { font-size: 16.5px; }
+@media (min-width: 48em) { html { font-size: 19px; } }
 body {
   font-family: var(--hb-sans);
   color: var(--hb-text);
@@ -313,7 +313,7 @@ article.page:has(.hb) .page__title { display: none; }
 .page__content .hb-vision .hb-h2 { margin-top: 2.25rem; }
 .page__content .hb-statement {
   font-family: var(--hb-serif);
-  font-size: clamp(1.45rem, 1.1rem + 1.4vw, 2.05rem);
+  font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.55rem);
   line-height: 1.25;
   font-weight: 500;
   color: var(--hb-ink);
