@@ -1,0 +1,196 @@
+# Publications shown on the home page.
+# To add a paper, copy an entry and edit it. Order within each list = display order.
+# Marks in authors: * equal contribution, † corresponding author. Your name is bolded automatically.
+# Optional fields: note (footnote line), highlight (e.g. Oral, Spotlight), links (name + url).
+
+preprints:
+- title: "GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer"
+  authors: "Junmo Cho*, Suhan Kim*, Sangjune An*, Minsu Kim, Dong Bok Lee, Heejun Lee, Kyu Hyun Choi, Byung-Soo Kim, Sung Ju Hwang, Hae Beom Lee"
+  venue: arXiv
+  year: 2026
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2602.03358"
+- title: "Let Agents Design How They Search: Automatic Interface Optimization for Agentic Search"
+  authors: Sangjune An, Jaeyoon Jung, Yumin Choi, Jinheon Baek, Junmo Cho, Sung Ju Hwang, Hae Beom Lee
+  venue: arXiv
+  year: 2026
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2610.29250"
+- title: "Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments"
+  authors: "JooKyung Yuh, Byungmin Park*, Eunseo Choi*, Jinheon Baek, Junmo Cho, Kyu Hyun Choi, Sung Ju Hwang, Kyong Hwan Jin†, Hae Beom Lee†"
+  venue: arXiv
+  year: 2026
+  note: "*: equal contribution as second authors, †: co-corresponding authors"
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2610.25747"
+conference:
+- title: "ProPolar: Progressive Polar Decomposition for Implicit Neural Representations"
+  authors: "Pureum Kim, Younggeon Ryu, Dongyoon Lee, Hae Beom Lee†, Kyong Hwan Jin†"
+  venue: NeurIPS
+  year: 2026
+  note: "†: co-corresponding authors"
+  links:
+  - name: paper
+    url: "https://neurips.cc/virtual/2026/poster/148388"
+- title: Cost-Sensitive Freeze-thaw Bayesian Optimization for Efficient Hyperparameter Tuning
+  authors: Dong Bok Lee, Aoxuan Silvia Zhang, Byungjoo Kim, Junhyeon Park, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Hae Beom Lee
+  venue: NeurIPS
+  year: 2025
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2405.17918"
+- title: Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks
+  authors: "Dongwoo Lee*, Dong Bok Lee*, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim, Hae Beom Lee"
+  venue: ICML
+  year: 2025
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2505.23032"
+- title: "Delta-AI: Local Objectives for Amortized Inference in Sparse Graphical Models"
+  authors: "Jean-Pierre René Falet*, Hae Beom Lee*, Nikolay Malkin*, Chen Sun, Dragos Secrieru, Dinghuai Zhang, Guillaume Lajoie, Yoshua Bengio"
+  venue: ICLR
+  year: 2024
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2310.02423"
+- title: Online Hyperparameter Meta-Learning with Hypergradient Distillation
+  authors: Hae Beom Lee, Hayeon Lee, Jaewoong Shin, Eunho Yang, Timothy M. Hospedales, Sung Ju Hwang
+  venue: ICLR
+  year: 2022
+  highlight: Spotlight
+  links:
+  - name: paper
+    url: "http://arxiv.org/abs/2110.02508"
+- title: "Sequential Reptile: Inter-Task Gradient Alignment for Multilingual Learning"
+  authors: "Seanie Lee*, Hae Beom Lee*, Juho Lee, Sung Ju Hwang"
+  venue: ICLR
+  year: 2022
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2110.02600"
+- title: Meta-Learning Low Rank Covariance Factors for Energy-Based Deterministic Uncertainty
+  authors: Jeffrey Ryan Willette, Hae Beom Lee, Juho Lee, Sung Ju Hwang
+  venue: ICLR
+  year: 2022
+  links:
+  - name: paper
+    url: "https://arxiv.org/abs/2110.06381"
+- title: Large-Scale Meta-Learning with Continual Trajectory Shifting
+  authors: "Jaewoong Shin*, Hae Beom Lee*, Boqing Gong, Sung Ju Hwang"
+  venue: ICML
+  year: 2021
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/2102.07215.pdf"
+  - name: code
+    url: "https://github.com/JWoong148/ContinualTrajectoryShifting"
+- title: "MetaPerturb: Transferable Regularizer for Heterogeneous Tasks and Architectures"
+  authors: "Jeongun Ryu*, Jaewoong Shin*, Hae Beom Lee*, Sung Ju Hwang"
+  venue: NeurIPS
+  year: 2020
+  note: "*: equal contribution"
+  highlight: Spotlight
+  links:
+  - name: paper
+    url: "https://papers.nips.cc/paper/2020/file/84ddfb34126fc3a48ee38d7044e87276-Paper.pdf"
+  - name: code
+    url: "https://github.com/JWoong148/metaperturb"
+- title: Meta-Learning for Short Utterance Speaker Recognition with Imbalance Length Pairs
+  authors: Seong Min Kye, Youngmoon Jung, Hae Beom Lee, Sung Ju Hwang, Hoirin Kim
+  venue: Interspeech
+  year: 2020
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/2004.02863.pdf"
+  - name: code
+    url: "https://github.com/seongmin-kye/meta-SR"
+- title: "Meta Variance Transfer: Learning to Augment from the Others"
+  authors: Seong Jin Park, Seungju Han, Ji-won Baek, Insoo Kim, Juhwan Song, Hae Beom Lee, Jae-Joon Han, Sung Ju Hwang
+  venue: ICML
+  year: 2020
+  links:
+  - name: paper
+    url: "https://proceedings.icml.cc/static/paper_files/icml/2020/2222-Paper.pdf"
+- title: "Learning to Balance: Bayesian Meta-Learning for Imbalanced and Out-of-distribution Tasks"
+  authors: "Hae Beom Lee*, Hayeon Lee*, Donghyun Na*, Saehoon Kim, Minseop Park, Eunho Yang, Sung Ju Hwang"
+  venue: ICLR
+  year: 2020
+  note: "*: equal contribution"
+  highlight: Oral
+  links:
+  - name: paper
+    url: "https://openreview.net/pdf?id=rkeZIJBYvr"
+  - name: code
+    url: "https://github.com/haebeom-lee/l2b"
+- title: "Meta Dropout: Learning to Perturb Latent Features for Generalization"
+  authors: Hae Beom Lee, Taewook Nam, Eunho Yang, Sung Ju Hwang
+  venue: ICLR
+  year: 2020
+  links:
+  - name: paper
+    url: "https://openreview.net/pdf?id=BJgd81SYwr"
+  - name: code
+    url: "https://github.com/haebeom-lee/metadrop"
+- title: "DropMax: Adaptive Variational Softmax"
+  authors: Hae Beom Lee, Juho Lee, Saehoon Kim, Eunho Yang, Sung Ju Hwang
+  venue: NeurIPS
+  year: 2018
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/1712.07834.pdf"
+  - name: code
+    url: "https://github.com/haebeom-lee/dropmax"
+- title: Uncertainty-Aware Attention for Reliable Interpretation and Prediction
+  authors: "Jay Heo*, Hae Beom Lee*, Saehoon Kim, Juho Lee, Kwang Joon Kim, Eunho Yang, Sung Ju Hwang"
+  venue: NeurIPS
+  year: 2018
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/1805.09653.pdf"
+  - name: code
+    url: "https://github.com/jayheo/UA"
+- title: Deep Asymmetric Multi-task Feature Learning
+  authors: Hae Beom Lee, Eunho Yang, Sung Ju Hwang
+  venue: ICML
+  year: 2018
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/1708.00260.pdf"
+  - name: code
+    url: "https://github.com/haebeom-lee/amtfl"
+earlier:
+- title: Dataset Condensation with Latent Space Knowledge Factorization and Sharing
+  authors: "Hae Beom Lee*, Dong Bok Lee*, Sung Ju Hwang"
+  venue: arXiv
+  year: 2022
+  note: "*: equal contribution"
+  links:
+  - name: paper
+    url: "http://arxiv.org/abs/2208.10494"
+- title: Meta-Learned Confidence for Few-shot Learning
+  authors: Sung Min Kye, Hae Beom Lee, Hoirin Kim, Sung Ju Hwang
+  venue: arXiv
+  year: 2020
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/2002.12017.pdf"
+  - name: code
+    url: "https://github.com/seongmin-kye/MCT"
+- title: Adaptive Network Sparsification with Dependent Variational Beta-Bernoulli Dropout
+  authors: Juho Lee, Saehoon Kim, Jaehong Yoon, Hae Beom Lee, Eunho Yang, Sung Ju Hwang
+  venue: arXiv
+  year: 2018
+  links:
+  - name: paper
+    url: "https://arxiv.org/pdf/1805.10896.pdf"
+  - name: code
+    url: "https://github.com/OpenXAIProject/Variational_Dropouts"
