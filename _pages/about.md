@@ -42,11 +42,28 @@ haebeomlee dot korea dot ac dot kr
 
 - <font size="4">GFlowPO: Generative Flow Network as a Language Model Prompt Optimizer</font>
 [[paper]](https://arxiv.org/abs/2602.03358) \\
-Junmo Cho\*, Suhan Kim\*, Sangjune An\*, Minsu Kim, Dong Bok Lee, Heejun Lee, Sung Ju Hwang, **Hae Beom Lee** \\
+Junmo Cho\*, Suhan Kim\*, Sangjune An\*, Minsu Kim, Dong Bok Lee, Heejun Lee, Kyu Hyun Choi, Byung-Soo Kim, Sung Ju Hwang, **Hae Beom Lee** \\
 (\*: equal contribution) \\
 arXiv, 2026
 
+- <font size="4">Let Agents Design How They Search: Automatic Interface Optimization for Agentic Search</font>
+[[paper]](https://arxiv.org/abs/2610.29250) \\
+Sangjune An, Jaeyoon Jung, Yumin Choi, Jinheon Baek, Junmo Cho, Sung Ju Hwang, **Hae Beom Lee** \\
+arXiv, 2026
+
+- <font size="4">Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments</font>
+[[paper]](https://arxiv.org/abs/2610.25747) \\
+JooKyung Yuh, Byungmin Park\*, Eunseo Choi\*, Jinheon Baek, Junmo Cho, Kyu Hyun Choi, Sung Ju Hwang, Kyong Hwan Jin†, **Hae Beom Lee**† \\
+(\*: equal contribution as second authors, †: co-corresponding authors) \\
+arXiv, 2026
+
 ## Conference Publications
+
+- <font size="4">ProPolar: Progressive Polar Decomposition for Implicit Neural Representations</font>
+[[paper]](https://neurips.cc/virtual/2026/poster/148388) \\
+Pureum Kim, Younggeon Ryu, Dongyoon Lee, **Hae Beom Lee**†, Kyong Hwan Jin† \\
+(†: co-corresponding authors) \\
+<span style="color:darkred">**NeurIPS**</span> 2026
 
 - <font size="4">Cost-Sensitive Freeze-thaw Bayesian Optimization for Efficient Hyperparameter Tuning</font>
 [[paper]](https://arxiv.org/abs/2405.17918) \\
