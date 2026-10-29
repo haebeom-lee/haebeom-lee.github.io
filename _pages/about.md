@@ -744,7 +744,8 @@ article.page:has(.hb) .page__title { display: none; }
   {%- assign groups = "preprints|Recent preprints,conference|Conference publications,earlier|Earlier preprints" | split: "," -%}
   {%- for g in groups -%}
   {%- assign parts = g | split: "|" -%}
-  {%- assign papers = page.papers[parts[0]] -%}
+  {%- assign key = parts[0] -%}
+  {%- assign papers = page.papers[key] -%}
   <h3 class="hb-h3">{{ parts[1] }}</h3>
   <ol class="hb-pub-list">
     {%- for p in papers -%}
