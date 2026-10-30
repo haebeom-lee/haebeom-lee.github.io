@@ -380,6 +380,7 @@ article.page:has(.hb) .page__title { display: none; }
 .page__content .hb-wm__flow--d3 { fill: var(--hb-d3); }
 .page__content .hb-wm__flow--muted { fill: var(--hb-muted); }
 .page__content .hb-wm__forget { fill: none; stroke: var(--hb-muted); stroke-width: 2; stroke-dasharray: 5 5; }
+.page__content .hb-wm__dashed { stroke-dasharray: 6 5; stroke-width: 2.2; }
 .page__content .hb-wm__head0 { fill: var(--hb-muted); }
 .page__content .hb-wm .hb-loop__svg { max-width: 38rem; }
 
@@ -661,9 +662,9 @@ article.page:has(.hb) .page__title { display: none; }
   <p class="hb-statement">I build explicit world models that serve as the working memory of language-model agents: small, testable, uncertainty-aware workspaces where knowledge is checked against evidence, repaired where it fails, and consolidated for future use.</p>
 
   <figure class="hb-loop hb-wm">
-    <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 640 372" role="img" aria-labelledby="wm-title wm-desc">
+    <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 640 378" role="img" aria-labelledby="wm-title wm-desc">
       <title id="wm-title">Explicit world models as working memory</title>
-      <desc id="wm-desc">Knowledge is externalized from the language model or retrieved from explicit records into a small explicit working memory, tested there against evidence from experiments and observations, and then internalized into the model, archived as an explicit record, or forgotten.</desc>
+      <desc id="wm-desc">Knowledge is externalized from the language model into a small explicit working memory and tested there against evidence from experiments. Verified results are archived as explicit records, which can be retrieved later; records that prove stable are internalized into the language model, and records that are unused are forgotten.</desc>
       <defs>
         <marker id="wm-a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d1" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d2" d="M0,0 L10,5 L0,10 z"/></marker>
@@ -671,42 +672,43 @@ article.page:has(.hb) .page__title { display: none; }
         <marker id="wm-a0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-wm__head0" d="M0,0 L10,5 L0,10 z"/></marker>
       </defs>
       <!-- flows -->
-      <path class="hb-arc hb-arc--d1" d="M150 96 C 152 140, 168 166, 194 168" marker-end="url(#wm-a1)"/>
-      <path class="hb-arc hb-arc--d3" d="M198 234 C 120 236, 62 178, 62 102" marker-end="url(#wm-a3)"/>
-      <path class="hb-arc hb-arc--d2" d="M444 166 C 498 166, 520 140, 520 102" marker-end="url(#wm-a2)"/>
-      <path class="hb-arc hb-arc--d2" d="M582 98 C 582 178, 520 232, 450 234" marker-end="url(#wm-a2)"/>
-      <path class="hb-arc hb-arc--d3" d="M320 300 L 320 268" marker-end="url(#wm-a3)"/>
-      <path class="hb-wm__forget" d="M430 260 L 476 296" marker-end="url(#wm-a0)"/>
+      <path class="hb-arc hb-arc--d1" d="M212 68 L374 68" marker-end="url(#wm-a1)"/>
+      <path class="hb-arc hb-arc--d2" d="M430 122 L430 268 L406 268" marker-end="url(#wm-a2)"/>
+      <path class="hb-arc hb-arc--d2 hb-wm__dashed" d="M330 228 L330 170 L400 170 L400 126" marker-end="url(#wm-a2)"/>
+      <path class="hb-arc hb-arc--d3" d="M148 268 L110 268 L110 112" marker-end="url(#wm-a3)"/>
+      <path class="hb-arc hb-arc--d3" d="M545 228 L545 126" marker-end="url(#wm-a3)"/>
+      <path class="hb-wm__forget" d="M275 308 L275 338" marker-end="url(#wm-a0)"/>
       <!-- tiers -->
-      <rect class="hb-wm__box hb-wm__box--impl" x="10" y="20" width="190" height="76" rx="8"/>
-      <text class="hb-wm__title" x="105" y="50">Implicit long-term memory</text>
-      <text class="hb-wm__sub" x="105" y="72">language-model parameters</text>
-      <rect class="hb-wm__box hb-wm__box--rec" x="440" y="20" width="190" height="76" rx="8"/>
-      <text class="hb-wm__title" x="535" y="50">Explicit long-term memory</text>
-      <text class="hb-wm__sub" x="535" y="72">records, provenance, scope</text>
-      <rect class="hb-wm__box hb-wm__box--wm" x="200" y="140" width="240" height="124" rx="10"/>
-      <text class="hb-core__title" x="320" y="174">Explicit working memory</text>
-      <text class="hb-wm__sub" x="320" y="200">verify against evidence</text>
-      <text class="hb-wm__sub" x="320" y="220">revise where it fails</text>
-      <text class="hb-wm__sub" x="320" y="244">small · testable · uncertainty-aware</text>
-      <rect class="hb-wm__box hb-wm__box--ev" x="212" y="302" width="216" height="56" rx="8"/>
-      <text class="hb-wm__title" x="320" y="326">Experiments &amp; observations</text>
-      <text class="hb-wm__sub" x="320" y="346">evidence from the system</text>
+      <rect class="hb-wm__box hb-wm__box--impl" x="10" y="30" width="200" height="76" rx="8"/>
+      <text class="hb-wm__title" x="110" y="60">Implicit memory</text>
+      <text class="hb-wm__sub" x="110" y="82">language-model parameters</text>
+      <rect class="hb-wm__box hb-wm__box--wm" x="380" y="20" width="250" height="104" rx="10"/>
+      <text class="hb-core__title" x="505" y="50">Explicit working memory</text>
+      <text class="hb-wm__sub" x="505" y="74">verify against evidence</text>
+      <text class="hb-wm__sub" x="505" y="92">revise where it fails</text>
+      <text class="hb-wm__sub" x="505" y="112">small · testable · uncertainty-aware</text>
+      <rect class="hb-wm__box hb-wm__box--rec" x="150" y="230" width="250" height="76" rx="8"/>
+      <text class="hb-wm__title" x="275" y="260">Explicit records</text>
+      <text class="hb-wm__sub" x="275" y="282">verified knowledge with its evidence</text>
+      <rect class="hb-wm__box hb-wm__box--ev" x="460" y="230" width="170" height="76" rx="8"/>
+      <text class="hb-wm__title" x="545" y="260">Experiments</text>
+      <text class="hb-wm__sub" x="545" y="282">evidence from the system</text>
       <!-- labels -->
-      <text class="hb-wm__flow hb-wm__flow--d1" x="210" y="120" text-anchor="start">externalize</text>
-      <text class="hb-wm__flow hb-wm__flow--d3" x="44" y="258" text-anchor="start">internalize</text>
-      <text class="hb-wm__flow hb-wm__flow--d2" x="496" y="134" text-anchor="end">archive</text>
-      <text class="hb-wm__flow hb-wm__flow--d2" x="588" y="214" text-anchor="start">retrieve</text>
-      <text class="hb-wm__flow hb-wm__flow--d3" x="330" y="290" text-anchor="start">evidence</text>
-      <text class="hb-wm__flow hb-wm__flow--muted" x="482" y="312" text-anchor="start">forget</text>
+      <text class="hb-wm__flow hb-wm__flow--d1" x="294" y="56" text-anchor="middle">externalize</text>
+      <text class="hb-wm__flow hb-wm__flow--d2" x="438" y="200" text-anchor="start">archive</text>
+      <text class="hb-wm__flow hb-wm__flow--d2" x="365" y="160" text-anchor="middle">retrieve</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="100" y="180" text-anchor="end">internalize</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="100" y="196" text-anchor="end">when stable</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="553" y="180" text-anchor="start">evidence</text>
+      <text class="hb-wm__flow hb-wm__flow--muted" x="275" y="360" text-anchor="middle">forget: compress or discard</text>
     </svg>
     <ol class="hb-loop__list">
       <li class="hb-d1">Externalize what is uncertain, fallible, or decision-relevant</li>
-      <li class="hb-d1">Verify it against evidence</li>
-      <li class="hb-d2">Revise the component that fails</li>
-      <li class="hb-d3">Consolidate: internalize, archive, or forget</li>
+      <li class="hb-d1">Verify it against evidence and revise what fails</li>
+      <li class="hb-d2">Archive verified results with their evidence</li>
+      <li class="hb-d3">Internalize what proves stable; forget the rest</li>
     </ol>
-    <figcaption>Knowledge moves between the implicit memory of a language model, a small explicit working memory, and explicit records. Only what is held in working memory is modeled with precision; the language model stands in for the rest.</figcaption>
+    <figcaption>Knowledge is externalized from a language model into a small explicit working memory, tested there, and archived with its evidence. Records that prove stable are internalized back into the model; only what is held in working memory is modeled with precision.</figcaption>
   </figure>
 
   <dl class="hb-terms">
@@ -725,7 +727,7 @@ article.page:has(.hb) .page__title { display: none; }
     <p>Language models know a great deal about the world, but their knowledge is stored in parameters. It is not attached to the evidence that supports it, it carries no calibrated estimate of its reliability, and when part of it is wrong for a particular system, there is no explicit place where the error can be found and repaired. My research asks how an agent that knows many things can also know <em>what to trust, what to question, and what to do next</em>.</p>
     <p>The question is becoming urgent. In domains where experiments are costly, generating candidate hypotheses is now far cheaper than testing them, so the bottleneck of intelligent behavior shifts from <strong>generation</strong> to <strong>verification and selection</strong>: deciding which explanations to believe, which experiment would best tell them apart, and which part of existing knowledge to revise when evidence disagrees.</p>
     <p>Both language models and explicit models can make predictions that are checked against observations. The difference lies in what is falsified when a prediction fails. An explicit model commits to mechanisms and assumptions, so a failure can be traced to specific components, tested by targeted experiments, and repaired locally. This structure makes calibrated uncertainty, local revision, and extrapolation possible, though it does not guarantee them; they have to be earned empirically.</p>
-    <p>I therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. Knowledge lives in three places: the implicit memory of the language model, a persistent store of explicit records, and a small working memory. Knowledge is brought into working memory when it must be tested, verified and revised there, and then consolidated: internalized into the model when it is general and corrective, archived when its precision or provenance matters, or forgotten when it is unlikely to be needed again.</p>
+    <p>I therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. This continues an older program in model-based machine learning, which separates a compact world model from a large amortized inference machine, but starts from a different place: the inference machine now exists as a pretrained language model, entangled with an implicit world model of its own. Knowledge is brought into working memory when it must be tested, verified and revised there, and archived with its evidence as an explicit record. Records that prove stable and recurrent are internalized back into the model; the rest are retained for exact computation or forgotten.</p>
     <p>Because working memory reasons explicitly about only a few variables while the language model stands in for the rest of the world, its central difficulty lies at that boundary. Errors arise when the language model's summary of the outside world is wrong, or when evidence depends on variables left outside. Understanding this boundary tells an agent what to make explicit, and the utilities it pursues decide at what resolution, and for how long, that knowledge is kept.</p>
     <p>These capabilities matter well beyond science. Any agent that acts in the world, whether it is optimizing an engineering process, diagnosing a failure, or carrying out a long task, needs to know what is grounded in evidence, what remains uncertain, and what to check next.</p>
   </details>
