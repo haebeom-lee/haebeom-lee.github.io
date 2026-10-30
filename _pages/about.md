@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "About me"
-excerpt: "System 2 intelligence, world models, and scientific discovery"
+excerpt: "Explicit world models as working memory for language-model agents"
 author_profile: true
 redirect_from:
   - /about/
@@ -366,6 +366,23 @@ article.page:has(.hb) .page__title { display: none; }
 .page__content .hb-label { font-family: var(--hb-sans); font-size: 16px; font-weight: 600; fill: var(--hb-ink); }
 
 .page__content .hb-loop__list { display: none; }
+/* Working-memory diagram */
+.page__content .hb-wm__box { stroke-width: 1.4; }
+.page__content .hb-wm__box--impl { fill: var(--hb-paper); stroke: var(--hb-muted); }
+.page__content .hb-wm__box--rec { fill: var(--hb-d2-wash); stroke: var(--hb-d2); }
+.page__content .hb-wm__box--wm { fill: var(--hb-d1-wash); stroke: var(--hb-d1); stroke-width: 1.8; }
+.page__content .hb-wm__box--ev { fill: var(--hb-d3-wash); stroke: var(--hb-d3); }
+.page__content .hb-wm__title { font-family: var(--hb-sans); font-size: 14px; font-weight: 700; fill: var(--hb-ink); text-anchor: middle; }
+.page__content .hb-wm__sub { font-family: var(--hb-sans); font-size: 12.5px; fill: var(--hb-muted); text-anchor: middle; }
+.page__content .hb-wm__flow { font-family: var(--hb-sans); font-size: 13px; font-weight: 600; }
+.page__content .hb-wm__flow--d1 { fill: var(--hb-d1); }
+.page__content .hb-wm__flow--d2 { fill: var(--hb-d2); }
+.page__content .hb-wm__flow--d3 { fill: var(--hb-d3); }
+.page__content .hb-wm__flow--muted { fill: var(--hb-muted); }
+.page__content .hb-wm__forget { fill: none; stroke: var(--hb-muted); stroke-width: 2; stroke-dasharray: 5 5; }
+.page__content .hb-wm__head0 { fill: var(--hb-muted); }
+.page__content .hb-wm .hb-loop__svg { max-width: 38rem; }
+
 .page__content .hb-loop figcaption {
   font-family: var(--hb-sans);
   text-align: center;
@@ -641,80 +658,76 @@ article.page:has(.hb) .page__title { display: none; }
 <section class="hb-vision" id="research-vision" aria-labelledby="vision-title">
   <h2 class="hb-h2" id="vision-title">Research vision</h2>
   <p class="hb-kicker">LLMs know many things.<br>Agents must know what to trust, what to question, and what to do next.</p>
-  <p class="hb-statement">I want to build AI systems that can discover how the world works, accumulate what they learn, and reason with that knowledge.</p>
+  <p class="hb-statement">I build explicit world models that serve as the working memory of language-model agents: small, testable, uncertainty-aware workspaces where knowledge is checked against evidence, repaired where it fails, and consolidated for future use.</p>
 
-  <figure class="hb-loop">
-    <svg class="hb-loop__svg" viewBox="0 0 640 440" role="img" aria-labelledby="loop-title loop-desc">
-      <title id="loop-title">The discovery loop</title>
-      <desc id="loop-desc">A cycle of five steps around a world model: propose hypotheses, make predictions, seek informative evidence, update the world model, and reason and act. Direction 1 covers the first three steps, Direction 2 the update step, and Direction 3 the reason and act step.</desc>
+  <figure class="hb-loop hb-wm">
+    <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 640 372" role="img" aria-labelledby="wm-title wm-desc">
+      <title id="wm-title">Explicit world models as working memory</title>
+      <desc id="wm-desc">Knowledge is externalized from the language model or retrieved from explicit records into a small explicit working memory, tested there against evidence from experiments and observations, and then internalized into the model, archived as an explicit record, or forgotten.</desc>
       <defs>
-        <marker id="hb-arrow-d1" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-          <path d="M0,1 L9,5 L0,9 z" class="hb-arrowhead--d1"/>
-        </marker>
-        <marker id="hb-arrow-d2" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-          <path d="M0,1 L9,5 L0,9 z" class="hb-arrowhead--d2"/>
-        </marker>
-        <marker id="hb-arrow-d3" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
-          <path d="M0,1 L9,5 L0,9 z" class="hb-arrowhead--d3"/>
-        </marker>
+        <marker id="wm-a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d1" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="wm-a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d2" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="wm-a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d3" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="wm-a0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-wm__head0" d="M0,0 L10,5 L0,10 z"/></marker>
       </defs>
-      <!-- arcs: circle centre (320,220) r 150; nodes at -90, -18, 54, 126, 198 degrees -->
-      <path class="hb-arc hb-arc--d1" d="M 346.0 72.3 A 150 150 0 0 1 449.9 145.0" marker-end="url(#hb-arrow-d1)"/>
-      <path class="hb-arc hb-arc--d1" d="M 468.5 199.1 A 150 150 0 0 1 431.5 320.4" marker-end="url(#hb-arrow-d1)"/>
-      <path class="hb-arc hb-arc--d2" d="M 385.8 354.8 A 150 150 0 0 1 259.0 357.0" marker-end="url(#hb-arrow-d2)"/>
-      <path class="hb-arc hb-arc--d3" d="M 212.1 324.2 A 150 150 0 0 1 170.8 204.3" marker-end="url(#hb-arrow-d3)"/>
-      <path class="hb-arc hb-arc--d1" d="M 187.6 149.6 A 150 150 0 0 1 288.8 73.3" marker-end="url(#hb-arrow-d1)"/>
-
-      <g class="hb-core">
-        <circle cx="320" cy="220" r="74"/>
-        <text x="320" y="214" class="hb-core__title">World model</text>
-        <text x="320" y="238" class="hb-core__sub">inspect, test, revise,</text>
-        <text x="320" y="256" class="hb-core__sub">compose, reuse</text>
-      </g>
-
-      <g class="hb-node hb-node--d1"><circle cx="320" cy="70" r="15"/><text x="320" y="75" class="hb-node__num">1</text></g>
-      <g class="hb-node hb-node--d1"><circle cx="462.7" cy="173.6" r="15"/><text x="462.7" y="178.6" class="hb-node__num">2</text></g>
-      <g class="hb-node hb-node--d1"><circle cx="408.2" cy="341.4" r="15"/><text x="408.2" y="346.4" class="hb-node__num">3</text></g>
-      <g class="hb-node hb-node--d2"><circle cx="231.8" cy="341.4" r="15"/><text x="231.8" y="346.4" class="hb-node__num">4</text></g>
-      <g class="hb-node hb-node--d3"><circle cx="177.3" cy="173.6" r="15"/><text x="177.3" y="178.6" class="hb-node__num">5</text></g>
-
-      <text x="320" y="38" class="hb-label" text-anchor="middle">Propose hypotheses</text>
-      <text x="486" y="170" class="hb-label" text-anchor="start">Make</text>
-      <text x="486" y="190" class="hb-label" text-anchor="start">predictions</text>
-      <text x="430" y="384" class="hb-label" text-anchor="start">Seek informative</text>
-      <text x="430" y="404" class="hb-label" text-anchor="start">evidence</text>
-      <text x="210" y="384" class="hb-label" text-anchor="end">Update the</text>
-      <text x="210" y="404" class="hb-label" text-anchor="end">world model</text>
-      <text x="154" y="170" class="hb-label" text-anchor="end">Reason</text>
-      <text x="154" y="190" class="hb-label" text-anchor="end">and act</text>
+      <!-- flows -->
+      <path class="hb-arc hb-arc--d1" d="M150 96 C 152 140, 168 166, 194 168" marker-end="url(#wm-a1)"/>
+      <path class="hb-arc hb-arc--d3" d="M198 234 C 120 236, 62 178, 62 102" marker-end="url(#wm-a3)"/>
+      <path class="hb-arc hb-arc--d2" d="M444 166 C 498 166, 520 140, 520 102" marker-end="url(#wm-a2)"/>
+      <path class="hb-arc hb-arc--d2" d="M582 98 C 582 178, 520 232, 450 234" marker-end="url(#wm-a2)"/>
+      <path class="hb-arc hb-arc--d3" d="M320 300 L 320 268" marker-end="url(#wm-a3)"/>
+      <path class="hb-wm__forget" d="M430 260 L 476 296" marker-end="url(#wm-a0)"/>
+      <!-- tiers -->
+      <rect class="hb-wm__box hb-wm__box--impl" x="10" y="20" width="190" height="76" rx="8"/>
+      <text class="hb-wm__title" x="105" y="50">Implicit long-term memory</text>
+      <text class="hb-wm__sub" x="105" y="72">language-model parameters</text>
+      <rect class="hb-wm__box hb-wm__box--rec" x="440" y="20" width="190" height="76" rx="8"/>
+      <text class="hb-wm__title" x="535" y="50">Explicit long-term memory</text>
+      <text class="hb-wm__sub" x="535" y="72">records, provenance, scope</text>
+      <rect class="hb-wm__box hb-wm__box--wm" x="200" y="140" width="240" height="124" rx="10"/>
+      <text class="hb-core__title" x="320" y="174">Explicit working memory</text>
+      <text class="hb-wm__sub" x="320" y="200">verify against evidence</text>
+      <text class="hb-wm__sub" x="320" y="220">revise where it fails</text>
+      <text class="hb-wm__sub" x="320" y="244">small · testable · uncertainty-aware</text>
+      <rect class="hb-wm__box hb-wm__box--ev" x="212" y="302" width="216" height="56" rx="8"/>
+      <text class="hb-wm__title" x="320" y="326">Experiments &amp; observations</text>
+      <text class="hb-wm__sub" x="320" y="346">evidence from the system</text>
+      <!-- labels -->
+      <text class="hb-wm__flow hb-wm__flow--d1" x="210" y="120" text-anchor="start">externalize</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="44" y="258" text-anchor="start">internalize</text>
+      <text class="hb-wm__flow hb-wm__flow--d2" x="496" y="134" text-anchor="end">archive</text>
+      <text class="hb-wm__flow hb-wm__flow--d2" x="588" y="214" text-anchor="start">retrieve</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="330" y="290" text-anchor="start">evidence</text>
+      <text class="hb-wm__flow hb-wm__flow--muted" x="482" y="312" text-anchor="start">forget</text>
     </svg>
     <ol class="hb-loop__list">
-      <li class="hb-d1">Propose hypotheses</li>
-      <li class="hb-d1">Make predictions</li>
-      <li class="hb-d1">Seek informative evidence</li>
-      <li class="hb-d2">Update the world model</li>
-      <li class="hb-d3">Reason and act, then repeat</li>
+      <li class="hb-d1">Externalize what is uncertain, fallible, or decision-relevant</li>
+      <li class="hb-d1">Verify it against evidence</li>
+      <li class="hb-d2">Revise the component that fails</li>
+      <li class="hb-d3">Consolidate: internalize, archive, or forget</li>
     </ol>
-    <figcaption>The agents I envision run this loop continuously. In this view, scientific discovery, learning from experience, and planning are aspects of the same problem.</figcaption>
+    <figcaption>Knowledge moves between the implicit memory of a language model, a small explicit working memory, and explicit records. Only what is held in working memory is modeled with precision; the language model stands in for the rest.</figcaption>
   </figure>
 
   <dl class="hb-terms">
     <div>
-      <dt>System 2 intelligence</dt>
-      <dd>Deliberate, evidence-grounded reasoning that forms hypotheses, weighs alternatives, recognizes uncertainty, and revises beliefs. Reasoning that is reliable and adaptive, not just longer.</dd>
+      <dt>Explicit world model</dt>
+      <dd>Knowledge stated as executable hypotheses (equations, programs, causal graphs, logical rules) that make testable predictions and expose the mechanisms and assumptions behind them.</dd>
     </div>
     <div>
-      <dt>World model</dt>
-      <dd>A structured, uncertainty-aware account of how a system works: its causal relationships, relational rules, mathematical laws, and mechanisms of change.</dd>
+      <dt>Working memory</dt>
+      <dd>The small, active set of variables, hypotheses, and verified models that an agent needs for its current inference, test, or decision, held with uncertainty over alternatives.</dd>
     </div>
   </dl>
 
   <details class="hb-more">
     <summary>Read the full research statement</summary>
-    <p>My research is motivated by a fundamental question: <em>How can an AI system go beyond recognizing patterns to understand the mechanisms behind its observations, and use that understanding to solve new problems?</em> I view this as an important step toward <strong>System 2 intelligence</strong>: deliberate, evidence-grounded reasoning that can formulate hypotheses, evaluate alternatives, recognize uncertainty, and revise beliefs when new evidence arrives. The goal is not simply to make language models generate longer reasoning traces, but to make their reasoning more reliable, grounded, and adaptive.</p>
-    <p>I believe <strong>world models</strong> are central to this goal. By a world model, I mean a structured and uncertainty-aware representation of how a system works: its causal relationships, relational rules, mathematical laws, and mechanisms of change. Rather than storing experience only as unstructured text or implicit model parameters, I am interested in <strong>explicit models that an agent can inspect, test, revise, compose, and reuse</strong> across different problems.</p>
-    <p>Ultimately, I envision agents that operate in a continuous loop: <strong>propose hypotheses, make predictions, seek informative evidence, update their world models, and use the resulting knowledge to reason and act.</strong> In this view, scientific discovery, learning from experience, and intelligent planning are closely connected aspects of the same problem.</p>
-    <p>These capabilities matter well beyond science. Any LLM agent that acts in the world, whether it is optimizing an engineering process, diagnosing a failure, or carrying out a long task, needs a world model that tells it what is grounded in evidence, what remains uncertain, and what to try next. I see explicit, uncertainty-aware world models as part of the epistemic infrastructure that reliable agents require.</p>
+    <p>Language models know a great deal about the world, but their knowledge is stored in parameters. It is not attached to the evidence that supports it, it carries no calibrated estimate of its reliability, and when part of it is wrong for a particular system, there is no explicit place where the error can be found and repaired. My research asks how an agent that knows many things can also know <em>what to trust, what to question, and what to do next</em>.</p>
+    <p>The question is becoming urgent. In domains where experiments are costly, generating candidate hypotheses is now far cheaper than testing them, so the bottleneck of intelligent behavior shifts from <strong>generation</strong> to <strong>verification and selection</strong>: deciding which explanations to believe, which experiment would best tell them apart, and which part of existing knowledge to revise when evidence disagrees.</p>
+    <p>Both language models and explicit models can make predictions that are checked against observations. The difference lies in what is falsified when a prediction fails. An explicit model commits to mechanisms and assumptions, so a failure can be traced to specific components, tested by targeted experiments, and repaired locally. This structure makes calibrated uncertainty, local revision, and extrapolation possible, though it does not guarantee them; they have to be earned empirically.</p>
+    <p>I therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. Knowledge lives in three places: the implicit memory of the language model, a persistent store of explicit records, and a small working memory. Knowledge is brought into working memory when it must be tested, verified and revised there, and then consolidated: internalized into the model when it is general and corrective, archived when its precision or provenance matters, or forgotten when it is unlikely to be needed again.</p>
+    <p>Because working memory reasons explicitly about only a few variables while the language model stands in for the rest of the world, its central difficulty lies at that boundary. Errors arise when the language model's summary of the outside world is wrong, or when evidence depends on variables left outside. Understanding this boundary tells an agent what to make explicit, and the utilities it pursues decide at what resolution, and for how long, that knowledge is kept.</p>
+    <p>These capabilities matter well beyond science. Any agent that acts in the world, whether it is optimizing an engineering process, diagnosing a failure, or carrying out a long task, needs to know what is grounded in evidence, what remains uncertain, and what to check next.</p>
   </details>
 </section>
 
@@ -724,48 +737,47 @@ article.page:has(.hb) .page__title { display: none; }
   <div class="hb-dir-grid">
     <article class="hb-dir hb-dir--d1">
       <div class="hb-dir__head">
-        <p class="hb-dir__steps">Loop steps 1–3</p>
-        <h3 class="hb-dir__title"><span class="hb-dir__n">1</span>Discovering explicit world models</h3>
+        <p class="hb-dir__steps">Inside working memory</p>
+        <h3 class="hb-dir__title"><span class="hb-dir__n">1</span>Verifying and revising explicit knowledge</h3>
       </div>
       <div class="hb-dir__body">
-        <p class="hb-dir__q">How can AI infer the laws and mechanisms of an unfamiliar system from limited observations, interaction, and existing knowledge?</p>
-        <ul class="hb-tags"><li>Causal models</li><li>Relational rules</li><li>Action laws</li><li>Knowledge from text</li><li>Active experimentation</li></ul>
+        <p class="hb-dir__q">How accurately, and with how few experiments, can explicit knowledge be verified and repaired?</p>
+        <ul class="hb-tags"><li>Numerical laws</li><li>Causal models</li><li>Relational rules</li><li>Action laws</li><li>Assumption-level revision</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
-        <p>I study the discovery of causal, relational, and mathematical models, as well as the laws that govern how actions change the world: when an action applies and what it does. Language models propose candidate explanations, probabilistic inference evaluates them against the data, and active experimentation selects the observations that best distinguish between competing explanations.</p>
-        <p>World models can also be built from what is already written down. I am interested in compiling papers, logs, and notes into structured knowledge: the hypotheses, mechanisms, and assumptions they contain, and the evidence that supports each of them.</p>
+        <p>Language models propose candidate hypotheses; probabilistic inference weighs them against evidence; and experiments are chosen to tell the remaining alternatives apart. When a prediction fails, competing explanations of the failure are compared and only the implicated component is repaired, while the rest is kept. I study this verification engine across numerical laws, causal structure, relational rules, and the laws that govern how actions change the world.</p>
+        <p>Because the value of explicit verification lies where implicit knowledge fails, I evaluate it on mechanisms that language models do not already know, and I always include the language model's own direct predictions as a competing candidate.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d2">
       <div class="hb-dir__head">
-        <p class="hb-dir__steps">Loop step 4</p>
-        <h3 class="hb-dir__title"><span class="hb-dir__n">2</span>Revising and building on knowledge</h3>
+        <p class="hb-dir__steps">At the boundary</p>
+        <h3 class="hb-dir__title"><span class="hb-dir__n">2</span>Deciding what to make explicit</h3>
       </div>
       <div class="hb-dir__body">
-        <p class="hb-dir__q">How can agents turn experience into lasting knowledge that they can correct and build on?</p>
-        <ul class="hb-tags"><li>Assumption-level revision</li><li>Growing theories</li><li>Scope and transfer</li><li>Consolidation</li><li>Reuse of known mechanisms</li></ul>
+        <p class="hb-dir__q">When a language model knows some things and not others, what should an agent bring into working memory?</p>
+        <ul class="hb-tags"><li>LLM priors</li><li>Self-inconsistency</li><li>Boundary error</li><li>Evidence accounting</li><li>Domain-specific records</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
-        <p>An intelligent system should learn more than isolated solutions to individual tasks. I am interested in how agents can consolidate experiences into persistent, structured knowledge; reconcile new evidence with prior beliefs; and identify and correct mistaken assumptions while preserving what they already explain well. Crucially, agents should be able to build on existing scientific knowledge, determine which known mechanisms apply to a new system, and discover what remains unknown. The aim is to develop world models that can be revised, composed, and reused instead of being reconstructed from scratch for every task.</p>
-        <p>Reusing knowledge safely requires knowing its scope: under which conditions a piece of knowledge holds and to which tasks it transfers. As a world model grows, it must also be maintained by resolving conflicts and removing redundant or stale knowledge. I am also interested in the boundary between explicit and implicit knowledge: what should be kept in an external world model, what can be left to the prior knowledge of a language model, and how stable knowledge can be internalized into compact skills or model weights.</p>
+        <p>Working memory is small, so deciding what to load into it matters as much as the inference performed inside it. Knowledge deserves to be made explicit when it is uncertain, when the language model is likely to be wrong about it, and when a decision depends on it. One useful signal is available before any experiment: disagreement between a language model's intuitive predictions and the predictions implied by the theories it states.</p>
+        <p>I study how to turn a language model's beliefs into calibrated priors over explicit hypotheses without counting the same evidence twice; how errors arise at the boundary between working memory and the knowledge outside it, and how to diagnose them; and how to use domain-specific records that no language model has seen, kept with their provenance and collection conditions.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d3">
       <div class="hb-dir__head">
-        <p class="hb-dir__steps">Loop step 5</p>
-        <h3 class="hb-dir__title"><span class="hb-dir__n">3</span>Reasoning and planning with world models</h3>
+        <p class="hb-dir__steps">Across tasks and time</p>
+        <h3 class="hb-dir__title"><span class="hb-dir__n">3</span>Knowledge for action, over time</h3>
       </div>
       <div class="hb-dir__body">
-        <p class="hb-dir__q">How can learned laws and their uncertainty guide what an agent does next?</p>
-        <ul class="hb-tags"><li>Planning with learned laws</li><li>Process optimization</li><li>Failure diagnosis</li><li>Amortized inference</li><li>Self-improving agents</li></ul>
+        <p class="hb-dir__q">Under multiple and changing goals, how should knowledge be used, kept, and internalized?</p>
+        <ul class="hb-tags"><li>Planning with learned laws</li><li>Utility-driven learning</li><li>Consolidation</li><li>Internalization</li><li>Self-improving agents</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
-        <p>A world model should do more than explain past observations: it should guide future decisions. I study how agents can plan with the laws they have discovered, for example in open-ended game environments, and how amortized Bayesian inference can deliver fast, calibrated predictions so that uncertainty informs every decision.</p>
-        <p>The same world models can support engineering applications: planning safe interventions to optimize and control a process, and diagnosing why an experiment, process, or system failed in terms of the assumptions, mechanisms, and constraints the model makes explicit.</p>
-        <p>I also study self-improving agents that learn from their own experience. A successful trajectory shows what worked, but not why it worked or when it applies. I am interested in extracting reliable, reusable knowledge from interaction trajectories, checking which claims the evidence actually supports, and consolidating that knowledge into the agent itself so that it improves even without the knowledge in its prompt. More broadly, I want agents to improve not only their world models but also how they discover, reason, and learn.</p>
+        <p>A world model is justified by what an agent can do with it: reuse learned laws for new goals, recover quickly when part of the world changes, and check plans before acting. I study planning with discovered laws, for example in open-ended game environments, and engineering uses such as optimizing a process or diagnosing why a system failed in terms of the assumptions a model makes explicit.</p>
+        <p>Goals are many and they change, so utility should decide not only what an agent learns but at what resolution it keeps that knowledge and for how long. Verified corrections are first kept as explicit records and supplied in context, and only stable, broadly useful ones are internalized into the model, with the explicit record serving as a regression test. I also study self-improving agents that extract reliable knowledge from their own trajectories and consolidate it into themselves.</p>
       </details>
     </article>
   </div>
