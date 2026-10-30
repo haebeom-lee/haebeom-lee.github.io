@@ -285,7 +285,19 @@ article.page:has(.hb) .page__title { display: none; }
 .page__content { font-size: 1.0625rem; line-height: 1.65; }
 
 /* ---------- Home page ---------- */
-.page__content .hb { max-width: 46rem; }
+/* Wider layout: cards, diagram and publications use the full width,
+   while running prose keeps a comfortable line length. */
+#main { max-width: 1440px; }
+@media (min-width: 64em) {
+  /* the theme reserves a wide right gutter for a table of contents we do not use */
+  article.page:has(.hb) { padding-right: 2rem; }
+}
+.page__content .hb { max-width: 62rem; }
+.page__content .hb-intro,
+.page__content .hb-vision > details > p,
+.page__content .hb-students > p,
+.page__content .hb-tools,
+.page__content .hb-terms dd { max-width: 48rem; }
 .page__content .hb p { margin: 0 0 1em; }
 
 .page__content .hb-h2 {
