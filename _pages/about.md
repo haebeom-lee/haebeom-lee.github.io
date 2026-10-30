@@ -337,7 +337,7 @@ article.page:has(.hb) .page__title { display: none; }
   font-weight: 500;
   color: var(--hb-ink);
   letter-spacing: -0.015em;
-  max-width: 34ch;
+  max-width: 48rem;
   margin: 0 0 1.5rem !important;
 }
 
@@ -503,26 +503,6 @@ article.page:has(.hb) .page__title { display: none; }
   padding: 0.1rem 0 0.1rem 1rem;
   margin: -0.25rem 0 1.5rem !important;
   max-width: 40rem;
-}
-.page__content .hb-tags li.hb-tag--later {
-  border-style: dashed;
-  color: var(--hb-muted);
-  background: transparent;
-}
-.page__content .hb-dir-legend {
-  margin-top: 0.75rem !important;
-  font-size: 0.85rem;
-  color: var(--hb-muted);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-.page__content .hb-dir-legend__swatch {
-  display: inline-block;
-  width: 1.6rem;
-  height: 0.9rem;
-  border: 1px dashed var(--hb-muted);
-  border-radius: 999px;
 }
 
 /* Students */
@@ -779,17 +759,16 @@ article.page:has(.hb) .page__title { display: none; }
       </div>
       <div class="hb-dir__body">
         <p class="hb-dir__q">How can learned laws and their uncertainty guide what an agent does next?</p>
-        <ul class="hb-tags"><li>Planning with learned laws</li><li>Process optimization</li><li>Failure diagnosis</li><li>Amortized inference</li><li class="hb-tag--later" title="Longer-term direction">Self-improving agents</li></ul>
+        <ul class="hb-tags"><li>Planning with learned laws</li><li>Process optimization</li><li>Failure diagnosis</li><li>Amortized inference</li><li>Self-improving agents</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
         <p>A world model should do more than explain past observations: it should guide future decisions. I study how agents can plan with the laws they have discovered, for example in open-ended game environments, and how amortized Bayesian inference can deliver fast, calibrated predictions so that uncertainty informs every decision.</p>
         <p>The same world models can support engineering applications: planning safe interventions to optimize and control a process, and diagnosing why an experiment, process, or system failed in terms of the assumptions, mechanisms, and constraints the model makes explicit.</p>
-        <p>In the longer term, I am interested in self-improving agents: agents that improve not only their world models but also how they discover, reason, and learn from their own experience, for example by identifying which changes to their own procedures actually improved performance.</p>
+        <p>I also study self-improving agents that learn from their own experience. A successful trajectory shows what worked, but not why it worked or when it applies. I am interested in extracting reliable, reusable knowledge from interaction trajectories, checking which claims the evidence actually supports, and consolidating that knowledge into the agent itself so that it improves even without the knowledge in its prompt. More broadly, I want agents to improve not only their world models but also how they discover, reason, and learn.</p>
       </details>
     </article>
   </div>
-  <p class="hb-dir-legend"><span class="hb-dir-legend__swatch" aria-hidden="true"></span>Dashed tags mark longer-term directions.</p>
 </section>
 
 <section class="hb-students" id="prospective-students" aria-labelledby="students-title">
