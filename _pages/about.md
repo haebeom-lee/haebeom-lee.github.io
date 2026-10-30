@@ -311,6 +311,13 @@ article.page:has(.hb) .page__title { display: none; }
 
 /* Vision */
 .page__content .hb-vision .hb-h2 { margin-top: 2.25rem; }
+.page__content .hb-kicker {
+  font-size: 0.98rem;
+  line-height: 1.5;
+  color: var(--hb-muted);
+  margin: 0 0 0.6rem !important;
+  max-width: 40rem;
+}
 .page__content .hb-statement {
   font-family: var(--hb-serif);
   font-size: clamp(1.3rem, 1.1rem + 0.6vw, 1.55rem);
@@ -641,6 +648,7 @@ article.page:has(.hb) .page__title { display: none; }
 
 <section class="hb-vision" id="research-vision" aria-labelledby="vision-title">
   <h2 class="hb-h2" id="vision-title">Research vision</h2>
+  <p class="hb-kicker">LLMs know many things.<br>Agents must know what to trust, what to question, and what to do next.</p>
   <p class="hb-statement">I want to build AI systems that can discover how the world works, accumulate what they learn, and reason with that knowledge.</p>
 
   <figure class="hb-loop">
@@ -714,6 +722,7 @@ article.page:has(.hb) .page__title { display: none; }
     <p>My research is motivated by a fundamental question: <em>How can an AI system go beyond recognizing patterns to understand the mechanisms behind its observations, and use that understanding to solve new problems?</em> I view this as an important step toward <strong>System 2 intelligence</strong>: deliberate, evidence-grounded reasoning that can formulate hypotheses, evaluate alternatives, recognize uncertainty, and revise beliefs when new evidence arrives. The goal is not simply to make language models generate longer reasoning traces, but to make their reasoning more reliable, grounded, and adaptive.</p>
     <p>I believe <strong>world models</strong> are central to this goal. By a world model, I mean a structured and uncertainty-aware representation of how a system works: its causal relationships, relational rules, mathematical laws, and mechanisms of change. Rather than storing experience only as unstructured text or implicit model parameters, I am interested in <strong>explicit models that an agent can inspect, test, revise, compose, and reuse</strong> across different problems.</p>
     <p>Ultimately, I envision agents that operate in a continuous loop: <strong>propose hypotheses, make predictions, seek informative evidence, update their world models, and use the resulting knowledge to reason and act.</strong> In this view, scientific discovery, learning from experience, and intelligent planning are closely connected aspects of the same problem.</p>
+    <p>These capabilities matter well beyond science. Any LLM agent that acts in the world, whether it is optimizing an engineering process, diagnosing a failure, or carrying out a long task, needs a world model that tells it what is grounded in evidence, what remains uncertain, and what to try next. I see explicit, uncertainty-aware world models as part of the epistemic infrastructure that reliable agents require.</p>
   </details>
 </section>
 
@@ -727,12 +736,13 @@ article.page:has(.hb) .page__title { display: none; }
         <h3 class="hb-dir__title"><span class="hb-dir__n">1</span>Discovering explicit world models</h3>
       </div>
       <div class="hb-dir__body">
-        <p class="hb-dir__q">How can AI infer the laws and mechanisms of an unfamiliar system from limited observations and interaction?</p>
-        <ul class="hb-tags"><li>Causal models</li><li>Relational rules</li><li>Action laws</li><li>Active experimentation</li></ul>
+        <p class="hb-dir__q">How can AI infer the laws and mechanisms of an unfamiliar system from limited observations, interaction, and existing knowledge?</p>
+        <ul class="hb-tags"><li>Causal models</li><li>Relational rules</li><li>Action laws</li><li>Knowledge from text</li><li>Active experimentation</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
         <p>I study the discovery of causal, relational, and mathematical models, as well as the laws that govern how actions change the world: when an action applies and what it does. Language models propose candidate explanations, probabilistic inference evaluates them against the data, and active experimentation selects the observations that best distinguish between competing explanations.</p>
+        <p>World models can also be built from what is already written down. I am interested in compiling papers, logs, and notes into structured knowledge: the hypotheses, mechanisms, and assumptions they contain, and the evidence that supports each of them.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d2">
@@ -742,11 +752,12 @@ article.page:has(.hb) .page__title { display: none; }
       </div>
       <div class="hb-dir__body">
         <p class="hb-dir__q">How can agents turn experience into lasting knowledge that they can correct and build on?</p>
-        <ul class="hb-tags"><li>Assumption-level revision</li><li>Growing theories</li><li>Reuse of known mechanisms</li></ul>
+        <ul class="hb-tags"><li>Assumption-level revision</li><li>Growing theories</li><li>Scope and transfer</li><li>Consolidation</li><li>Reuse of known mechanisms</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
         <p>An intelligent system should learn more than isolated solutions to individual tasks. I am interested in how agents can consolidate experiences into persistent, structured knowledge; reconcile new evidence with prior beliefs; and identify and correct mistaken assumptions while preserving what they already explain well. Crucially, agents should be able to build on existing scientific knowledge, determine which known mechanisms apply to a new system, and discover what remains unknown. The aim is to develop world models that can be revised, composed, and reused instead of being reconstructed from scratch for every task.</p>
+        <p>Reusing knowledge safely requires knowing its scope: under which conditions a piece of knowledge holds and to which tasks it transfers. As a world model grows, it must also be maintained by resolving conflicts and removing redundant or stale knowledge. I am also interested in the boundary between explicit and implicit knowledge: what should be kept in an external world model, what can be left to the prior knowledge of a language model, and how stable knowledge can be internalized into compact skills or model weights.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d3">
@@ -756,12 +767,13 @@ article.page:has(.hb) .page__title { display: none; }
       </div>
       <div class="hb-dir__body">
         <p class="hb-dir__q">How can learned laws and their uncertainty guide what an agent does next?</p>
-        <ul class="hb-tags"><li>Planning with learned laws</li><li>Amortized inference</li><li class="hb-tag--later" title="Longer-term direction">Self-improving agents</li></ul>
+        <ul class="hb-tags"><li>Planning with learned laws</li><li>Process optimization</li><li>Failure diagnosis</li><li>Amortized inference</li><li class="hb-tag--later" title="Longer-term direction">Self-improving agents</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
         <p>A world model should do more than explain past observations: it should guide future decisions. I study how agents can plan with the laws they have discovered, for example in open-ended game environments, and how amortized Bayesian inference can deliver fast, calibrated predictions so that uncertainty informs every decision.</p>
-        <p>In the longer term, I am interested in self-improving agents: agents that improve not only their world models but also how they discover, reason, and learn from their own experience.</p>
+        <p>The same world models can support engineering applications: planning safe interventions to optimize and control a process, and diagnosing why an experiment, process, or system failed in terms of the assumptions, mechanisms, and constraints the model makes explicit.</p>
+        <p>In the longer term, I am interested in self-improving agents: agents that improve not only their world models but also how they discover, reason, and learn from their own experience, for example by identifying which changes to their own procedures actually improved performance.</p>
       </details>
     </article>
   </div>
