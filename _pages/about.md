@@ -19,9 +19,10 @@ papers:
     - name: paper
       url: "https://arxiv.org/abs/2602.03358"
   - title: "Let Agents Design How They Search: Automatic Interface Optimization for Agentic Search"
-    authors: Sangjune An, Jaeyoon Jung, Yumin Choi, Jinheon Baek, Junmo Cho, Sung Ju Hwang, Hae Beom Lee
+    authors: Sangjune An*, Jaeyoon Jung*, Yumin Choi*, Jinheon Baek, Junmo Cho, Sung Ju Hwang, Hae Beom Lee
     venue: arXiv
     year: 2026
+    note: "*: equal contribution"
     links:
     - name: paper
       url: "https://arxiv.org/abs/2610.29250"
