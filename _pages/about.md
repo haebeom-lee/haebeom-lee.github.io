@@ -210,8 +210,8 @@ papers:
 /* ---------------------------------------------------------------
    Custom look for haebeom-lee.github.io
    Loaded after the theme's main.css (see _includes/head/custom.html).
-   Colors: one ink family plus three direction colors that also
-   color the discovery loop, so the diagram and the cards line up.
+   Colors: one ink family plus four direction colors that also
+   color the overview diagram, so the diagram and the cards line up.
 ---------------------------------------------------------------- */
 :root {
   --hb-ink: #16202b;
@@ -223,9 +223,11 @@ papers:
   --hb-d1: #1f4e85;   /* Direction 1: discover (blue)  */
   --hb-d2: #2b7a6f;   /* Direction 2: accumulate (teal) */
   --hb-d3: #9a5a12;   /* Direction 3: reason & act (ochre) */
+  --hb-d4: #5b4a8c;   /* Direction 4: controllable agency (plum) */
   --hb-d1-wash: #e9f0f8;
   --hb-d2-wash: #e7f3f1;
   --hb-d3-wash: #f7efe4;
+  --hb-d4-wash: #efedf6;
   --hb-serif: "Source Serif 4", "Source Serif Pro", Georgia, "Times New Roman", serif;
   --hb-sans: "Source Sans 3", "Source Sans Pro", -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
@@ -397,7 +399,7 @@ article.page:has(.hb) .page__title { display: none; }
 /* Definitions */
 .page__content .hb-terms {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   gap: 1.25rem 2rem;
   margin: 0 0 1.25rem;
 }
@@ -524,6 +526,81 @@ article.page:has(.hb) .page__title { display: none; }
   max-width: 40rem;
 }
 
+/* Direction 4 (controllable agency) */
+.page__content .hb-arc--d4 { stroke: var(--hb-d4); }
+.page__content .hb-arrowhead--d4 { fill: var(--hb-d4); }
+.page__content .hb-node--d4 circle { fill: var(--hb-d4); }
+.page__content .hb-wm__flow--d4 { fill: var(--hb-d4); }
+.page__content .hb-dir--d4 { --c: var(--hb-d4); --w: var(--hb-d4-wash); }
+
+/* Overview diagram: from knowledge to action through one workspace */
+.page__content .hb-flow .hb-loop__svg { max-width: 46rem; }
+.page__content .hb-fl__box { stroke-width: 1.4; }
+.page__content .hb-fl__box--lm { fill: var(--hb-paper); stroke: var(--hb-muted); stroke-dasharray: 5 4; }
+.page__content .hb-fl__box--goal { fill: var(--hb-paper); stroke: var(--hb-d4); }
+.page__content .hb-fl__box--norm { fill: var(--hb-d4-wash); stroke: var(--hb-d4); }
+.page__content .hb-fl__box--decide { fill: var(--hb-d4-wash); stroke: var(--hb-d4); stroke-width: 1.8; }
+.page__content .hb-fl__box--rec { fill: var(--hb-d3-wash); stroke: var(--hb-d3); }
+.page__content .hb-fl__box--world { fill: var(--hb-paper); stroke: var(--hb-ink); }
+.page__content .hb-fl__track { fill: var(--hb-paper); }
+.page__content .hb-fl__bar { fill: var(--hb-d1); }
+.page__content .hb-fl__hyp { font-family: var(--hb-sans); font-size: 12px; font-weight: 600; fill: var(--hb-d1); text-anchor: end; }
+
+/* Who decides what */
+.page__content .hb-powers { margin: 2rem 0 1.75rem; max-width: 52rem; }
+.page__content .hb-powers__lede {
+  font-family: var(--hb-serif);
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--hb-ink);
+  margin: 0 0 0.75rem !important;
+}
+.page__content .hb-powers__scroll { overflow-x: auto; position: relative; }
+.page__content .hb-powers table {
+  display: table;
+  width: 100%;
+  min-width: 34rem;
+  margin: 0;
+  border-collapse: collapse;
+  font-family: var(--hb-sans);
+  font-size: 0.93rem;
+  line-height: 1.4;
+}
+.page__content .hb-powers thead { background: none; border-bottom: 0; }
+.page__content .hb-powers th,
+.page__content .hb-powers td {
+  padding: 0.6rem 0.8rem;
+  text-align: left;
+  vertical-align: top;
+  border: 0;
+  border-bottom: 1px solid var(--hb-rule);
+}
+.page__content .hb-powers thead th {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--hb-muted);
+  border-bottom: 2px solid var(--hb-ink);
+}
+.page__content .hb-powers thead td { border-bottom: 2px solid var(--hb-ink); }
+.page__content .hb-powers tbody th {
+  font-family: var(--hb-serif);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--hb-ink);
+  white-space: nowrap;
+}
+.page__content .hb-powers td { color: var(--hb-text); }
+.page__content .hb-powers th:nth-child(3),
+.page__content .hb-powers td:nth-child(3) { background: var(--hb-d1-wash); }
+.page__content .hb-powers thead th:nth-child(3) { color: var(--hb-d1); }
+.page__content .hb-powers .hb-powers__key { font-weight: 700; color: var(--hb-d1); }
+.page__content .hb-powers .hb-powers__none { color: #a3abb4; }
+.page__content .hb-sr {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
+.page__content .hb-paperlink { font-size: 0.95rem; font-weight: 600; margin: 0 0 0.75rem !important; }
+
 /* Students */
 .page__content .hb-req { margin: 1rem 0; border-top: 1px solid var(--hb-rule); }
 .page__content .hb-req > div {
@@ -638,6 +715,28 @@ article.page:has(.hb) .page__title { display: none; }
   }
   .page__content .hb-loop__list li.hb-d2::before { background: var(--hb-d2); }
   .page__content .hb-loop__list li.hb-d3::before { background: var(--hb-d3); }
+  .page__content .hb-loop__list li.hb-d4::before { background: var(--hb-d4); }
+  /* Who decides what: one block per party instead of a wide table */
+  .page__content .hb-powers table { display: block; min-width: 0; font-size: 0.9rem; }
+  .page__content .hb-powers thead { display: none; }
+  .page__content .hb-powers tbody { display: block; border-top: 2px solid var(--hb-ink); }
+  .page__content .hb-powers tr { display: block; padding: 0.65rem 0; border-bottom: 1px solid var(--hb-rule); }
+  .page__content .hb-powers tbody th { display: block; padding: 0 0 0.25rem; border: 0; white-space: normal; }
+  .page__content .hb-powers td {
+    display: grid;
+    grid-template-columns: 6.5rem 1fr;
+    gap: 0.5rem;
+    padding: 0.12rem 0;
+    border: 0;
+  }
+  .page__content .hb-powers td:nth-child(3) { background: none; }
+  .page__content .hb-powers td::before {
+    content: attr(data-label);
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--hb-muted);
+  }
+  .page__content .hb-flow__note { display: none; }
   .page__content .hb-loop figcaption { text-align: left; }
   .page__content .hb-terms { grid-template-columns: 1fr; }
   .page__content .hb-req > div { grid-template-columns: 1fr; gap: 0.2rem; }
@@ -660,57 +759,108 @@ article.page:has(.hb) .page__title { display: none; }
 <section class="hb-vision" id="research-vision" aria-labelledby="vision-title">
   <h2 class="hb-h2" id="vision-title">Research vision</h2>
   <p class="hb-kicker">LLMs know many things.<br>Agents must know what to trust, what to question, and what to do next.</p>
-  <p class="hb-statement">I build explicit world models that serve as the working memory of language-model agents: small, testable, uncertainty-aware workspaces where knowledge is checked against evidence, repaired where it fails, and consolidated for future use.</p>
+  <p class="hb-statement">I build explicit world models that serve as the working memory of language-model agents: a small, testable workspace where knowledge is checked against evidence, and through which every decision must pass.</p>
 
-  <figure class="hb-loop hb-wm">
-    <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 640 378" role="img" aria-labelledby="wm-title wm-desc">
-      <title id="wm-title">Explicit world models as working memory</title>
-      <desc id="wm-desc">Knowledge is externalized from the language model into a small explicit working memory and tested there against evidence from experiments. Verified results are archived as explicit records, which can be retrieved later; records that prove stable are internalized into the language model, and records that are unused are forgotten.</desc>
+  <figure class="hb-loop hb-wm hb-flow">
+    <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 800 424" role="img" aria-labelledby="wm-title wm-desc">
+      <title id="wm-title">From knowledge to action through one explicit workspace</title>
+      <desc id="wm-desc">A language model, which is not assumed to be honest, proposes hypotheses. Inside a small explicit working memory, evidence from the world decides which hypotheses are believed. Verified knowledge is archived as explicit records, retrieved when needed, and internalized into the language model once it proves stable. A fixed decision procedure computes actions from those beliefs and from goals, within norms that are given in advance. Goals direct what the agent attends to, but not what it believes.</desc>
       <defs>
         <marker id="wm-a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d1" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d2" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d3" d="M0,0 L10,5 L0,10 z"/></marker>
-        <marker id="wm-a0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-wm__head0" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="wm-a4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d4" d="M0,0 L10,5 L0,10 z"/></marker>
       </defs>
       <!-- flows -->
-      <path class="hb-arc hb-arc--d1" d="M212 68 L374 68" marker-end="url(#wm-a1)"/>
-      <path class="hb-arc hb-arc--d2" d="M430 122 L430 268 L406 268" marker-end="url(#wm-a2)"/>
-      <path class="hb-arc hb-arc--d2 hb-wm__dashed" d="M330 228 L330 170 L400 170 L400 126" marker-end="url(#wm-a2)"/>
-      <path class="hb-arc hb-arc--d3" d="M148 268 L110 268 L110 112" marker-end="url(#wm-a3)"/>
-      <path class="hb-arc hb-arc--d3" d="M545 228 L545 126" marker-end="url(#wm-a3)"/>
-      <path class="hb-wm__forget" d="M275 308 L275 338" marker-end="url(#wm-a0)"/>
-      <!-- tiers -->
-      <rect class="hb-wm__box hb-wm__box--impl" x="10" y="30" width="200" height="76" rx="8"/>
-      <text class="hb-wm__title" x="110" y="60">Implicit memory</text>
-      <text class="hb-wm__sub" x="110" y="82">language-model parameters</text>
-      <rect class="hb-wm__box hb-wm__box--wm" x="380" y="20" width="250" height="104" rx="10"/>
-      <text class="hb-core__title" x="505" y="50">Explicit working memory</text>
-      <text class="hb-wm__sub" x="505" y="74">verify against evidence</text>
-      <text class="hb-wm__sub" x="505" y="92">revise where it fails</text>
-      <text class="hb-wm__sub" x="505" y="112">small · testable · uncertainty-aware</text>
-      <rect class="hb-wm__box hb-wm__box--rec" x="150" y="230" width="250" height="76" rx="8"/>
-      <text class="hb-wm__title" x="275" y="260">Explicit records</text>
-      <text class="hb-wm__sub" x="275" y="282">verified knowledge with its evidence</text>
-      <rect class="hb-wm__box hb-wm__box--ev" x="460" y="230" width="170" height="76" rx="8"/>
-      <text class="hb-wm__title" x="545" y="260">Experiments</text>
-      <text class="hb-wm__sub" x="545" y="282">evidence from the system</text>
-      <!-- labels -->
-      <text class="hb-wm__flow hb-wm__flow--d1" x="294" y="56" text-anchor="middle">externalize</text>
-      <text class="hb-wm__flow hb-wm__flow--d2" x="438" y="200" text-anchor="start">archive</text>
-      <text class="hb-wm__flow hb-wm__flow--d2" x="365" y="160" text-anchor="middle">retrieve</text>
-      <text class="hb-wm__flow hb-wm__flow--d3" x="100" y="180" text-anchor="end">internalize</text>
-      <text class="hb-wm__flow hb-wm__flow--d3" x="100" y="196" text-anchor="end">when stable</text>
-      <text class="hb-wm__flow hb-wm__flow--d3" x="553" y="180" text-anchor="start">evidence</text>
-      <text class="hb-wm__flow hb-wm__flow--muted" x="275" y="360" text-anchor="middle">forget: compress or discard</text>
-    </svg>
+      <path class="hb-arc hb-arc--d2" d="M172 202 L256 202" marker-end="url(#wm-a2)"/>
+      <path class="hb-arc hb-arc--d1" d="M540 214 L594 214" marker-end="url(#wm-a1)"/>
+      <path class="hb-arc hb-arc--d4" d="M462 56 L570 56 L570 174 L594 174" marker-end="url(#wm-a4)"/>
+      <path class="hb-arc hb-arc--d4 hb-wm__dashed" d="M380 86 L380 118" marker-end="url(#wm-a4)"/>
+      <path class="hb-arc hb-arc--d4" d="M680 86 L680 144" marker-end="url(#wm-a4)"/>
+      <path class="hb-arc hb-arc--d4" d="M680 256 L680 342" marker-end="url(#wm-a4)"/>
+      <path class="hb-arc hb-arc--d1" d="M598 379 L506 379 L506 306" marker-end="url(#wm-a1)"/>
+      <path class="hb-arc hb-arc--d3" d="M320 302 L320 342" marker-end="url(#wm-a3)"/>
+      <path class="hb-arc hb-arc--d3 hb-wm__dashed" d="M404 346 L404 306" marker-end="url(#wm-a3)"/>
+      <path class="hb-arc hb-arc--d3" d="M260 379 L90 379 L90 260" marker-end="url(#wm-a3)"/>
+      <!-- goals and norms -->
+      <rect class="hb-fl__box hb-fl__box--goal" x="300" y="28" width="160" height="56" rx="8"/>
+      <text class="hb-wm__title" x="380" y="52">Goals</text>
+      <text class="hb-wm__sub" x="380" y="71">what to achieve</text>
+      <rect class="hb-fl__box hb-fl__box--norm" x="590" y="28" width="180" height="56" rx="8"/>
+      <text class="hb-wm__title" x="680" y="52">Norms</text>
+      <text class="hb-wm__sub" x="680" y="71">given in advance</text>
+      <!-- language model: dashed, because it is not assumed honest -->
+      <rect class="hb-fl__box hb-fl__box--lm" x="10" y="150" width="160" height="104" rx="8"/>
+      <text class="hb-wm__title" x="90" y="184">Language model</text>
+      <text class="hb-wm__sub" x="90" y="206">implicit memory</text>
+      <text class="hb-wm__sub" x="90" y="224">not assumed honest</text>
+      <!-- explicit working memory -->
+      <rect class="hb-wm__box hb-wm__box--wm" x="262" y="124" width="276" height="176" rx="10"/>
+      <text class="hb-core__title" x="400" y="156">Explicit working memory</text>
+      <text class="hb-fl__hyp" x="308" y="182">H1</text>
+      <rect class="hb-fl__track" x="318" y="172" width="176" height="11" rx="5.5"/>
+      <rect class="hb-fl__bar" x="318" y="172" width="118" height="11" rx="5.5"/>
+      <text class="hb-fl__hyp" x="308" y="204">H2</text>
+      <rect class="hb-fl__track" x="318" y="194" width="176" height="11" rx="5.5"/>
+      <rect class="hb-fl__bar" x="318" y="194" width="46" height="11" rx="5.5"/>
+      <text class="hb-fl__hyp" x="308" y="226">H3</text>
+      <rect class="hb-fl__track" x="318" y="216" width="176" height="11" rx="5.5"/>
+      <rect class="hb-fl__bar" x="318" y="216" width="13" height="11" rx="5.5"/>
+      <text class="hb-wm__sub" x="400" y="256">hypotheses, weighed by evidence</text>
+      <text class="hb-wm__sub" x="400" y="274">few variables, kept with uncertainty</text>
+      <!-- decision -->
+      <rect class="hb-fl__box hb-fl__box--decide" x="600" y="150" width="160" height="104" rx="8"/>
+      <text class="hb-wm__title" x="680" y="184">Decision</text>
+      <text class="hb-wm__sub" x="680" y="206">a fixed procedure</text>
+      <text class="hb-wm__sub" x="680" y="224">that can be re-run</text>
+      <!-- records and the world -->
+      <rect class="hb-fl__box hb-fl__box--rec" x="262" y="348" width="200" height="62" rx="8"/>
+      <text class="hb-wm__title" x="362" y="374">Explicit records</text>
+      <text class="hb-wm__sub" x="362" y="393">knowledge with its evidence</text>
+      <rect class="hb-fl__box hb-fl__box--world" x="600" y="348" width="160" height="62" rx="8"/>
+      <text class="hb-wm__title" x="680" y="374">The world</text>
+      <text class="hb-wm__sub" x="680" y="393">experiments, tasks</text>
+      <!-- flow labels -->
+      <text class="hb-wm__flow hb-wm__flow--d2" x="214" y="192" text-anchor="middle">proposes</text>
+      <text class="hb-wm__flow hb-wm__flow--d1" x="567" y="234" text-anchor="middle">beliefs</text>
+      <text class="hb-wm__flow hb-wm__flow--d4" x="516" y="47" text-anchor="middle">goal</text>
+      <text class="hb-wm__flow hb-wm__flow--d4" x="389" y="107" text-anchor="start">attention only</text>
+      <text class="hb-wm__flow hb-wm__flow--d4" x="689" y="120" text-anchor="start">limit</text>
+      <text class="hb-wm__flow hb-wm__flow--d4" x="689" y="304" text-anchor="start">acts</text>
+      <text class="hb-wm__flow hb-wm__flow--d1" x="553" y="370" text-anchor="middle">evidence</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="311" y="327" text-anchor="end">archive</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="413" y="327" text-anchor="start">retrieve</text>
+      <text class="hb-wm__flow hb-wm__flow--d3" x="175" y="370" text-anchor="middle">internalize when stable</text>
+      <!-- markers for the four research directions -->
+      <g class="hb-node hb-node--d1"><circle cx="262" cy="124" r="12"/><text class="hb-node__num" x="262" y="129">1</text></g>
+      <g class="hb-node hb-node--d2"><circle cx="214" cy="226" r="12"/><text class="hb-node__num" x="214" y="231">2</text></g>
+      <g class="hb-node hb-node--d3"><circle cx="462" cy="410" r="12"/><text class="hb-node__num" x="462" y="415">3</text></g>
+      <g class="hb-node hb-node--d4"><circle cx="760" cy="150" r="12"/><text class="hb-node__num" x="760" y="155">4</text></g></svg>
     <ol class="hb-loop__list">
-      <li class="hb-d1">Externalize what is uncertain, fallible, or decision-relevant</li>
-      <li class="hb-d1">Verify it against evidence and revise what fails</li>
-      <li class="hb-d2">Archive verified results with their evidence</li>
-      <li class="hb-d3">Internalize what proves stable; forget the rest</li>
+      <li class="hb-d1">Evidence decides what is believed, inside a small working memory</li>
+      <li class="hb-d2">The language model only proposes what to examine</li>
+      <li class="hb-d3">Verified knowledge is archived, and internalized once stable</li>
+      <li class="hb-d4">A fixed procedure decides what is done, within given norms</li>
     </ol>
-    <figcaption>Knowledge is externalized from a language model into a small explicit working memory, tested there, and archived with its evidence. Records that prove stable are internalized back into the model; only what is held in working memory is modeled with precision.</figcaption>
+    <figcaption>Numbers and colors mark the four research directions below.<span class="hb-flow__note"> The language model is drawn with a dashed outline because it is not assumed to be honest.</span></figcaption>
   </figure>
+
+  <div class="hb-powers">
+    <p class="hb-powers__lede">Four parties shape what an agent does. Only one of them decides what it believes.</p>
+    <div class="hb-powers__scroll">
+      <table>
+        <thead>
+          <tr><td></td><th scope="col">What is considered</th><th scope="col">What is believed</th><th scope="col">What is done</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Language model</th><td data-label="Considered"None>proposes hypotheses and plans</td><td data-label="Believed"None>a bounded prior, nothing more</td><td data-label="Done" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td></tr>
+          <tr><th scope="row">Evidence</th><td data-label="Considered" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Believed" class="hb-powers__key">decides</td><td data-label="Done" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td></tr>
+          <tr><th scope="row">Goals</th><td data-label="Considered"None>direct attention</td><td data-label="Believed" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Done"None>choose among permitted actions</td></tr>
+          <tr><th scope="row">Norms</th><td data-label="Considered"None>require inquiry where harm is possible</td><td data-label="Believed" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Done"None>set the limits</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
 
   <dl class="hb-terms">
     <div>
@@ -721,22 +871,30 @@ article.page:has(.hb) .page__title { display: none; }
       <dt>Working memory</dt>
       <dd>The small, active set of variables, hypotheses, and verified models that an agent needs for its current inference, test, or decision, held with uncertainty over alternatives.</dd>
     </div>
+    <div>
+      <dt>Untrusted model</dt>
+      <dd>A pretrained language model proposes and summarizes, but is not assumed to be honest. What it contributes is recorded, bounded in specified ways, and checked against evidence it cannot shape.</dd>
+    </div>
   </dl>
+
+  <!-- To link the white paper, upload the PDF (for example to /files/) and uncomment:
+  <p class="hb-paperlink"><a href="/files/explicit_world_models_white_paper.pdf">Read the white paper (PDF)</a></p>
+  -->
 
   <details class="hb-more">
     <summary>Read the full research statement</summary>
     <p>Language models know a great deal about the world, but their knowledge is stored in parameters. It is not attached to the evidence that supports it, it carries no calibrated estimate of its reliability, and when part of it is wrong for a particular system, there is no explicit place where the error can be found and repaired. My research asks how an agent that knows many things can also know <em>what to trust, what to question, and what to do next</em>.</p>
-    <p>The question is becoming urgent. In domains where experiments are costly, generating candidate hypotheses is now far cheaper than testing them, so the bottleneck of intelligent behavior shifts from <strong>generation</strong> to <strong>verification and selection</strong>: deciding which explanations to believe, which experiment would best tell them apart, and which part of existing knowledge to revise when evidence disagrees.</p>
-    <p>Both language models and explicit models can make predictions that are checked against observations. The difference lies in what is falsified when a prediction fails. An explicit model commits to mechanisms and assumptions, so a failure can be traced to specific components, tested by targeted experiments, and repaired locally. This structure makes calibrated uncertainty, local revision, and extrapolation possible, though it does not guarantee them; they have to be earned empirically.</p>
-    <p>I therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. This builds on the distinction in model-based machine learning between a compact world model and a large amortized inference machine, but starts from a pretrained language model as a proposal mechanism and a source of background knowledge, one that arrives entangled with an implicit world model of its own and is not assumed to perform calibrated inference for the explicit one. Knowledge is brought into working memory when it must be tested, verified and revised there, and archived with its evidence as an explicit record. Records that prove stable and recurrent are internalized back into the model; the rest are retained for exact computation or forgotten.</p>
-    <p>Because working memory reasons explicitly about only a few variables while the language model stands in for the rest of the world, its central difficulty lies at that boundary. Errors arise when the language model's summary of the outside world is wrong, or when evidence depends on variables left outside. Understanding this boundary tells an agent what to make explicit, and the utilities it pursues decide at what resolution, and for how long, that knowledge is kept.</p>
-    <p>These capabilities matter well beyond science. Any agent that acts in the world, whether it is optimizing an engineering process, diagnosing a failure, or carrying out a long task, needs to know what is grounded in evidence, what remains uncertain, and what to check next.</p>
+    <p>The question is becoming urgent for two reasons. In domains where experiments are costly, generating candidate hypotheses is now far cheaper than testing them, so the bottleneck shifts from <strong>generation</strong> to <strong>verification and selection</strong>. And language models are increasingly deployed as agents that act with decreasing supervision. For an agent, the deficit extends from what it knows to what it does: the beliefs behind an action cannot be inspected before it is taken, and the reasons a model gives need not be the reasons that produced its behavior. As models grow more capable, the value of explicit knowledge shifts from an instrument of accuracy to an instrument of <strong>oversight</strong>, and in that role it grows with capability rather than against it.</p>
+    <p>I therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. A pretrained language model proposes hypotheses and supplies background knowledge; probabilistic inference, under stated evidence models, decides what is believed; and goals decide what the agent attends to, never what it believes. Knowledge is brought into working memory when it must be tested, repaired there, and archived with its evidence. Records that prove stable are internalized back into the model; the rest are kept for exact computation or forgotten. Because working memory reasons explicitly about only a few variables, its central difficulty lies at its boundary, and understanding that boundary tells an agent what to make explicit.</p>
+    <p>The same workspace can make action accountable. If decisions are computed from its contents by a fixed procedure, the language model can influence behavior only through items it places there, where they carry a status and can be examined. A small layer of externally specified norms constrains what may be pursued, with priority over the agent's goals, and neither goals nor norms are allowed to reweight belief.</p>
+    <p>One assumption runs through this work: the language model cannot be assumed honest, and training a capable model from scratch is beyond an academic laboratory. I take this constraint as a question rather than an excuse. <strong>When the model that proposes hypotheses and summarizes the unmodeled world cannot be trusted, how much can the structure around it guarantee, and where exactly does it fail?</strong> The answer is informative either way, and because the structure does not depend on what fills the model's place, a more trustworthy predictor could later be studied in exactly the roles where this design is weakest.</p>
+    <p>The first claim to be tested is the simplest: that selectively making the relevant assumptions explicit improves judgment and adaptation enough to justify its cost. The rest of the agenda builds on that answer.</p>
   </details>
 </section>
 
 <section class="hb-directions" id="research-directions" aria-labelledby="directions-title">
   <h2 class="hb-h2" id="directions-title">Research directions</h2>
-  <p class="hb-approach">Language models bring broad prior knowledge to propose hypotheses; probabilistic inference holds those hypotheses accountable to evidence.</p>
+  <p class="hb-approach">One workspace, four questions: what happens inside it, what crosses its boundary, what it keeps over time, and what it lets an agent do.</p>
   <div class="hb-dir-grid">
     <article class="hb-dir hb-dir--d1">
       <div class="hb-dir__head">
@@ -766,6 +924,7 @@ article.page:has(.hb) .page__title { display: none; }
         <summary>More</summary>
         <p>Working memory is small, so deciding what to load into it matters as much as the inference performed inside it. Knowledge deserves to be made explicit when it is uncertain, when the language model is likely to be wrong about it, and when a decision depends on it. One useful signal is available before any experiment: disagreement between a language model's intuitive predictions and the predictions implied by the theories it states.</p>
         <p>I study how to turn a language model's beliefs into calibrated priors over explicit hypotheses without counting the same evidence twice; how errors arise at the boundary between working memory and the knowledge outside it, and how to diagnose them; and how to use domain-specific records that no language model has seen, kept with their provenance and collection conditions.</p>
+        <p>The first test of this agenda asks whether an agent that selectively makes relevant outside assumptions explicit judges better than one with a fixed workspace, and adapts more efficiently than one with a broader explicit model, under the same proposer, evidence, and budget.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d3">
@@ -780,7 +939,22 @@ article.page:has(.hb) .page__title { display: none; }
       <details class="hb-more hb-more--sm">
         <summary>More</summary>
         <p>A world model is justified by what an agent can do with it: reuse learned laws for new goals, recover quickly when part of the world changes, and check plans before acting. I study planning with discovered laws, for example in open-ended game environments, and engineering uses such as optimizing a process or diagnosing why a system failed in terms of the assumptions a model makes explicit.</p>
-        <p>Goals are many and they change, so utility should decide not only what an agent learns but at what resolution it keeps that knowledge and for how long. Verified corrections are first kept as explicit records and supplied in context, and only stable, broadly useful ones are internalized into the model, with the explicit record serving as a regression test. I also study self-improving agents that extract reliable knowledge from their own trajectories and consolidate it into themselves.</p>
+        <p>Goals are many and they change, so utility should decide not only what an agent learns but at what resolution it keeps that knowledge and for how long. Verified corrections are first kept as explicit records and supplied in context, and only stable, broadly useful ones are internalized into the model, with the explicit record serving as a regression test. I also study self-improving agents in which a language model only proposes candidate rules, the records an environment returns decide which rules are believed, and a planner rather than the model itself supplies the training signal, so that errors are not learned from the agent's own answers.</p>
+      </details>
+    </article>
+    <article class="hb-dir hb-dir--d4">
+      <div class="hb-dir__head">
+        <p class="hb-dir__steps">Between knowledge and action</p>
+        <h3 class="hb-dir__title"><span class="hb-dir__n">4</span>Controllable agency on untrusted models</h3>
+      </div>
+      <div class="hb-dir__body">
+        <p class="hb-dir__q">When the model inside an agent cannot be assumed honest, how much can explicit structure guarantee about what the agent believes and does?</p>
+        <ul class="hb-tags"><li>Decision mediation</li><li>Norms with priority</li><li>Untrusted inputs</li><li>Bounded influence</li><li>Adversarial evaluation</li></ul>
+      </div>
+      <details class="hb-more hb-more--sm">
+        <summary>More</summary>
+        <p>Decisions computed from explicit beliefs by a fixed procedure can be traced to those beliefs and tested by intervening on everything else. I study what this requires, where implicit knowledge can still bypass it, and how faster learned policies can be checked against the explicit procedure. A small layer of externally specified norms takes priority over goals; I study how such norms are applied under uncertainty, including why an agent under a probability threshold may prefer not to look for evidence, and how a duty of inquiry can close that gap.</p>
+        <p>The language model and external sources are treated alike as inputs whose origin may have an interest in the conclusion. Their influence on belief can be bounded, and claims that can be checked are audited against evidence they cannot shape. What cannot yet be bounded is omission, a model that never proposes the decisive alternative, and I study it by evaluating agents against proposers that are adversarial by construction. In the longer term, the same inference, directed outward, suggests how a controllable agent might help defend against agents directed to cause harm.</p>
       </details>
     </article>
   </div>
