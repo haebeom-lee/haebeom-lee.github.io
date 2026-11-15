@@ -399,7 +399,7 @@ article.page:has(.hb) .page__title { display: none; }
 /* Definitions */
 .page__content .hb-terms {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
   gap: 1.25rem 2rem;
   margin: 0 0 1.25rem;
 }
@@ -561,6 +561,7 @@ article.page:has(.hb) .page__title { display: none; }
   width: 100%;
   min-width: 34rem;
   margin: 0;
+  border: 0;
   border-collapse: collapse;
   font-family: var(--hb-sans);
   font-size: 0.93rem;
@@ -853,10 +854,10 @@ article.page:has(.hb) .page__title { display: none; }
           <tr><td></td><th scope="col">What is considered</th><th scope="col">What is believed</th><th scope="col">What is done</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Language model</th><td data-label="Considered"None>proposes hypotheses and plans</td><td data-label="Believed"None>a bounded prior, nothing more</td><td data-label="Done" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td></tr>
+          <tr><th scope="row">Language model</th><td data-label="Considered">proposes hypotheses and plans</td><td data-label="Believed">a bounded prior, nothing more</td><td data-label="Done" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td></tr>
           <tr><th scope="row">Evidence</th><td data-label="Considered" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Believed" class="hb-powers__key">decides</td><td data-label="Done" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td></tr>
-          <tr><th scope="row">Goals</th><td data-label="Considered"None>direct attention</td><td data-label="Believed" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Done"None>choose among permitted actions</td></tr>
-          <tr><th scope="row">Norms</th><td data-label="Considered"None>require inquiry where harm is possible</td><td data-label="Believed" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Done"None>set the limits</td></tr>
+          <tr><th scope="row">Goals</th><td data-label="Considered">direct attention</td><td data-label="Believed" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Done">choose among permitted actions</td></tr>
+          <tr><th scope="row">Norms</th><td data-label="Considered">require inquiry where harm is possible</td><td data-label="Believed" class="hb-powers__none"><span aria-hidden="true">&ndash;</span><span class="hb-sr">no role</span></td><td data-label="Done">set the limits</td></tr>
         </tbody>
       </table>
     </div>
