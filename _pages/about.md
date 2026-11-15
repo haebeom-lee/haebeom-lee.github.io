@@ -620,6 +620,9 @@ article.page:has(.hb) .page__title { display: none; }
 .page__content .hb-pill--d3 rect { fill: var(--hb-d3); }
 .page__content .hb-pill--d4 rect { fill: var(--hb-d4); }
 .page__content .hb-fl__box--act { fill: var(--hb-d3-wash); stroke: var(--hb-d3); }
+.page__content .hb-fl__box--s2 { fill: var(--hb-d2-wash); stroke: var(--hb-d2); stroke-width: 1.8; }
+.page__content .hb-fl__box--wmodel { fill: var(--hb-d1-wash); stroke: var(--hb-d1); }
+.page__content .hb-arc--d0 { stroke: var(--hb-muted); }
 .page__content .hb-fl__leader { fill: none; stroke: var(--hb-d2); stroke-width: 1.5; stroke-dasharray: 1 5; stroke-linecap: round; }
 
 /* One worked example, as four steps */
@@ -867,37 +870,38 @@ article.page:has(.hb) .page__title { display: none; }
   <figure class="hb-loop hb-wm hb-flow">
     <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 800 376" role="img" aria-labelledby="wm-title wm-desc">
       <title id="wm-title">Two ways of thinking inside one agent</title>
-      <desc id="wm-desc">System 1 is a language model: fast, broad, and sometimes wrong. It is fast but sometimes wrong, and it proposes ideas to System 2, an explicit world model in which hypotheses are written down and weighed by evidence. System 2 decides what the agent does. Actions stay within limits set by people, change the world, and return evidence to System 2. What System 2 verifies is taught back to System 1. Four labels mark the research themes: System 2 reasoning, world model, agentic AI, and safe AI.</desc>
+      <desc id="wm-desc">System 1 is a language model: fast, broad, and sometimes wrong. It is fast but sometimes wrong, and it proposes ideas to System 2. System 2 is slow, explicit reasoning: it keeps a world model, a small set of hypotheses written down, and tests them against evidence. System 2 decides what the agent does. Actions stay within limits set by people, change the world, and return evidence to System 2. What System 2 verifies is taught back to System 1. Four labels mark the research themes: System 2 reasoning, world model, agentic AI, and safe AI.</desc>
       <defs>
         <marker id="wm-a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d1" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d2" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d3" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d4" d="M0,0 L10,5 L0,10 z"/></marker>
+        <marker id="wm-a0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-wm__head0" d="M0,0 L10,5 L0,10 z"/></marker>
       </defs>
-      <path class="hb-arc hb-arc--d2" d="M202 178 L284 178" marker-end="url(#wm-a2)"/>
-      <path class="hb-arc hb-arc--d2 hb-wm__dashed" d="M288 222 L208 222" marker-end="url(#wm-a2)"/>
+      <path class="hb-arc hb-arc--d0" d="M202 178 L284 178" marker-end="url(#wm-a0)"/>
+      <path class="hb-arc hb-arc--d0 hb-wm__dashed" d="M288 222 L208 222" marker-end="url(#wm-a0)"/>
       <path class="hb-arc hb-arc--d3" d="M552 196 L624 196" marker-end="url(#wm-a3)"/>
       <path class="hb-arc hb-arc--d4" d="M708 94 L708 134" marker-end="url(#wm-a4)"/>
       <path class="hb-arc hb-arc--d3" d="M708 264 L708 298" marker-end="url(#wm-a3)"/>
-      <path class="hb-arc hb-arc--d1" d="M628 333 L480 333 L480 292" marker-end="url(#wm-a1)"/>
-      <path class="hb-fl__leader" d="M245 110 L245 152"/>
+      <path class="hb-arc hb-arc--d2" d="M628 333 L480 333 L480 308" marker-end="url(#wm-a2)"/>
       <rect class="hb-fl__box hb-fl__box--lm" x="14" y="140" width="186" height="116" rx="8"/>
       <text class="hb-core__title" x="107" y="178">System 1</text>
       <text class="hb-wm__sub" x="107" y="200">a language model</text>
       <text class="hb-wm__sub" x="107" y="218">fast, but sometimes wrong</text>
-      <rect class="hb-wm__box hb-wm__box--wm" x="290" y="110" width="260" height="176" rx="10"/>
-      <text class="hb-core__title" x="420" y="150">System 2</text>
-      <text class="hb-wm__sub" x="420" y="170">an explicit world model</text>
-      <text class="hb-fl__hyp" x="338" y="196">H1</text>
-      <rect class="hb-fl__track" x="348" y="186" width="160" height="11" rx="5.5"/>
-      <rect class="hb-fl__bar" x="348" y="186" width="108" height="11" rx="5.5"/>
-      <text class="hb-fl__hyp" x="338" y="218">H2</text>
-      <rect class="hb-fl__track" x="348" y="208" width="160" height="11" rx="5.5"/>
-      <rect class="hb-fl__bar" x="348" y="208" width="42" height="11" rx="5.5"/>
-      <text class="hb-fl__hyp" x="338" y="240">H3</text>
-      <rect class="hb-fl__track" x="348" y="230" width="160" height="11" rx="5.5"/>
-      <rect class="hb-fl__bar" x="348" y="230" width="12" height="11" rx="5.5"/>
-      <text class="hb-wm__sub" x="420" y="268">ideas written down and tested</text>
+      <rect class="hb-fl__box hb-fl__box--s2" x="290" y="104" width="260" height="198" rx="10"/>
+      <text class="hb-core__title" x="420" y="144">System 2</text>
+      <text class="hb-wm__sub" x="420" y="163">slow, explicit reasoning</text>
+      <rect class="hb-fl__box hb-fl__box--wmodel" x="312" y="186" width="216" height="80" rx="8"/>
+      <text class="hb-fl__hyp" x="352" y="214.5">H1</text>
+      <rect class="hb-fl__track" x="360" y="206" width="150" height="9" rx="4.5"/>
+      <rect class="hb-fl__bar" x="360" y="206" width="100" height="9" rx="4.5"/>
+      <text class="hb-fl__hyp" x="352" y="231.5">H2</text>
+      <rect class="hb-fl__track" x="360" y="223" width="150" height="9" rx="4.5"/>
+      <rect class="hb-fl__bar" x="360" y="223" width="40" height="9" rx="4.5"/>
+      <text class="hb-fl__hyp" x="352" y="248.5">H3</text>
+      <rect class="hb-fl__track" x="360" y="240" width="150" height="9" rx="4.5"/>
+      <rect class="hb-fl__bar" x="360" y="240" width="11" height="9" rx="4.5"/>
+      <text class="hb-wm__sub" x="420" y="287">tested against evidence</text>
       <rect class="hb-fl__box hb-fl__box--act" x="630" y="140" width="156" height="110" rx="8"/>
       <text class="hb-wm__title" x="708" y="176">Action</text>
       <text class="hb-wm__sub" x="708" y="198">plan, experiment,</text>
@@ -908,13 +912,13 @@ article.page:has(.hb) .page__title { display: none; }
       <rect class="hb-fl__box hb-fl__box--world" x="630" y="304" width="156" height="58" rx="8"/>
       <text class="hb-wm__title" x="708" y="329">The world</text>
       <text class="hb-wm__sub" x="708" y="347">tasks, experiments</text>
-      <text class="hb-wm__flow hb-wm__flow--d2" x="243" y="168" text-anchor="middle">proposes</text>
-      <text class="hb-wm__flow hb-wm__flow--d2" x="246" y="242" text-anchor="middle">teaches</text>
+      <text class="hb-wm__flow hb-wm__flow--muted" x="243" y="168" text-anchor="middle">proposes</text>
+      <text class="hb-wm__flow hb-wm__flow--muted" x="246" y="242" text-anchor="middle">teaches</text>
       <text class="hb-wm__flow hb-wm__flow--d3" x="588" y="186" text-anchor="middle">decides</text>
       <text class="hb-wm__flow hb-wm__flow--d3" x="718" y="286" text-anchor="start">acts</text>
-      <text class="hb-wm__flow hb-wm__flow--d1" x="554" y="324" text-anchor="middle">evidence</text>
-      <g class="hb-pill hb-pill--d2"><rect x="176" y="86" width="138" height="22" rx="11"/><text x="245" y="101.5">System 2 reasoning</text></g>
-      <g class="hb-pill hb-pill--d1"><rect x="372" y="99" width="96" height="22" rx="11"/><text x="420" y="114.5">World model</text></g>
+      <text class="hb-wm__flow hb-wm__flow--d2" x="554" y="324" text-anchor="middle">evidence</text>
+      <g class="hb-pill hb-pill--d2"><rect x="351" y="93" width="138" height="22" rx="11"/><text x="420" y="108.5">System 2 reasoning</text></g>
+      <g class="hb-pill hb-pill--d1"><rect x="372" y="175" width="96" height="22" rx="11"/><text x="420" y="190.5">World model</text></g>
       <g class="hb-pill hb-pill--d3"><rect x="666" y="239" width="84" height="22" rx="11"/><text x="708" y="254.5">Agentic AI</text></g>
       <g class="hb-pill hb-pill--d4"><rect x="675" y="19" width="66" height="22" rx="11"/><text x="708" y="34.5">Safe AI</text></g>
     </svg>
@@ -928,14 +932,13 @@ article.page:has(.hb) .page__title { display: none; }
   </figure>
 
   <div class="hb-steps">
-    <p class="hb-steps__title">On one question: &ldquo;A model stops improving as it gets more data. Why?&rdquo;</p>
+    <p class="hb-steps__title">For example, an agent learning the rules of a box-pushing puzzle:</p>
     <ol class="hb-steps__list">
-      <li><span class="hb-steps__name">Guess</span>The language model answers at once: the model is too small.</li>
-      <li><span class="hb-steps__name">Write it down</span>The agent states two explanations as testable models: limited capacity, or noisier labels in the newer data.</li>
-      <li><span class="hb-steps__name">Test</span>It picks the experiment that tells them apart: relabel a small sample and measure again.</li>
-      <li><span class="hb-steps__name">Update</span>The evidence points to noisy labels. The agent revises its belief, records why, and acts on it.</li>
+      <li><span class="hb-steps__name">Guess</span>The language model says: pushing a box always moves it.</li>
+      <li><span class="hb-steps__name">Write it down</span>The agent writes this as a rule it can test, next to a rival rule: a box stays put if a wall is behind it.</li>
+      <li><span class="hb-steps__name">Test</span>It tries the one move that tells the two rules apart: pushing a box that stands against a wall.</li>
+      <li><span class="hb-steps__name">Update</span>The box does not move. The agent drops the first rule, keeps the second, and plans its next moves with it.</li>
     </ol>
-    <p class="hb-steps__note">An illustrative example.</p>
   </div>
 </section>
 
