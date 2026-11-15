@@ -50,7 +50,7 @@ papers:
     links:
     - name: paper
       url: "https://arxiv.org/abs/2405.17918"
-  - title: Bayesian Neural Scaling Laws Extrapolation with Prior-Fitted Networks
+  - title: Bayesian Neural Scaling Law Extrapolation with Prior-Data Fitted Networks
     authors: "Dongwoo Lee*, Dong Bok Lee*, Steven Adriaensen, Juho Lee, Sung Ju Hwang, Frank Hutter, Seon Joo Kim, Hae Beom Lee"
     venue: ICML
     year: 2025
@@ -184,7 +184,7 @@ papers:
     - name: paper
       url: "http://arxiv.org/abs/2208.10494"
   - title: Meta-Learned Confidence for Few-shot Learning
-    authors: Sung Min Kye, Hae Beom Lee, Hoirin Kim, Sung Ju Hwang
+    authors: Seong Min Kye, Hae Beom Lee, Hoirin Kim, Sung Ju Hwang
     venue: arXiv
     year: 2020
     links:
@@ -283,7 +283,10 @@ a:focus-visible, summary:focus-visible {
 .author__urls, .author__urls li, .author__urls a { font-size: 0.8rem; }
 
 /* Home page: the hero statement replaces the generic "About me" title */
-article.page:has(.hb) .page__title { display: none; }
+article.page:has(.hb) .page__title {
+  position: absolute; width: 1px; height: 1px; overflow: hidden;
+  clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap; margin: 0;
+}
 
 .page__content { font-size: 1.0625rem; line-height: 1.65; }
 
@@ -865,12 +868,12 @@ article.page:has(.hb) .page__title { display: none; }
   <h2 class="hb-h2" id="vision-title">Research</h2>
   <p class="hb-kicker">LLMs know many things.<br>Agents must know what to trust, what to question, and what to do next.</p>
   <p class="hb-statement">My lab builds AI agents that think before they act.</p>
-  <p class="hb-lede">Today's language models answer fast, like intuition. That is powerful, but intuition cannot show its work or tell you when it is wrong. We add a second, slower way of thinking: the agent writes down what it believes as an explicit world model, tests it against evidence, and only then decides what to do.</p>
+  <p class="hb-lede">Today’s language models answer fast, like intuition. That is powerful, but intuition cannot show its work or tell you when it is wrong. We add a second, slower way of thinking: the agent writes down what it believes as an explicit world model, tests it against evidence, and only then decides what to do.</p>
 
   <figure class="hb-loop hb-wm hb-flow">
     <svg class="hb-loop__svg hb-wm__svg" viewBox="0 0 800 376" role="img" aria-labelledby="wm-title wm-desc">
       <title id="wm-title">Two ways of thinking inside one agent</title>
-      <desc id="wm-desc">System 1 is a language model: fast, broad, and sometimes wrong. It is fast but sometimes wrong, and it proposes ideas to System 2. System 2 is slow, explicit reasoning: it keeps a world model, a small set of hypotheses written down, and tests them against evidence. System 2 decides what the agent does. Actions stay within limits set by people, change the world, and return evidence to System 2. What System 2 verifies is taught back to System 1. Four labels mark the research themes: System 2 reasoning, world model, agentic AI, and safe AI.</desc>
+      <desc id="wm-desc">System 1 is a language model: fast, but sometimes wrong. It proposes ideas to System 2. System 2 is slow, explicit reasoning: it keeps a world model, a small set of hypotheses written down, and tests them against evidence. System 2 decides what the agent does. Actions stay within limits set by people, change the world, and return evidence to System 2. What System 2 verifies is taught back to System 1. Four labels mark the research themes: System 2 reasoning, world model, agentic AI, and safe AI.</desc>
       <defs>
         <marker id="wm-a1" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d1" d="M0,0 L10,5 L0,10 z"/></marker>
         <marker id="wm-a2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path class="hb-arrowhead--d2" d="M0,0 L10,5 L0,10 z"/></marker>
@@ -928,7 +931,7 @@ article.page:has(.hb) .page__title { display: none; }
       <li class="hb-d3"><span><strong>Agentic AI.</strong> Plan, act, and learn from what happens.</span></li>
       <li class="hb-d4"><span><strong>Safe AI.</strong> Stay within limits that people set.</span></li>
     </ol>
-    <figcaption>A language model is fast and broad, like intuition. We add a slower, explicit layer that writes ideas down, tests them, and decides.<span class="hb-flow__note"> The four colored labels are the research themes below.</span></figcaption>
+    <figcaption>System 1 proposes; System 2 tests the ideas against evidence and decides; the agent acts within limits, and what happens comes back as evidence.<span class="hb-flow__note"> The colored labels are the four research themes below.</span></figcaption>
   </figure>
 
   <div class="hb-steps">
@@ -954,12 +957,12 @@ article.page:has(.hb) .page__title { display: none; }
       <div class="hb-dir__body">
         <p class="hb-dir__q">A language model answers instantly, like intuition. We study how an agent can notice when that first answer may be wrong, slow down, and check it with explicit hypotheses, probabilities, and experiments.</p>
         <p class="hb-dir__ask"><span>We ask</span>When should an agent stop trusting its first answer, and how should it check it?</p>
-        <ul class="hb-tags"><li>Probabilistic inference</li><li>Hypothesis testing</li><li>Experimental design</li><li>Uncertainty</li><li>Self-consistency of LLMs</li></ul>
+        <ul class="hb-tags"><li>Probabilistic inference</li><li>Hypothesis testing</li><li>Experimental design</li><li>Uncertainty</li><li>LLM self-inconsistency</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More detail</summary>
         <p>Language models propose candidate hypotheses; probabilistic inference weighs them against evidence; and experiments are chosen to tell the remaining alternatives apart. When a prediction fails, competing explanations of the failure are compared and only the implicated component is repaired, while the rest is kept.</p>
-        <p>One useful signal is available before any experiment: disagreement between a language model's intuitive predictions and the predictions implied by the theories it states. I study how to turn a language model's beliefs into calibrated priors over explicit hypotheses without counting the same evidence twice, and I always include the language model's own direct predictions as a competing candidate.</p>
+        <p>One useful signal is available before any experiment: disagreement between a language model’s intuitive predictions and the predictions implied by the theories it states. We study how to turn a language model’s beliefs into calibrated priors over explicit hypotheses without counting the same evidence twice, and we always include the language model’s own direct predictions as a competing candidate.</p>
         <p class="hb-dir__paper">Related paper: <a href="https://arxiv.org/abs/2610.25747">Bayesian Model Discovery with Language Models: Closing the Loop between Hypotheses and Experiments</a></p>
       </details>
     </article>
@@ -975,8 +978,8 @@ article.page:has(.hb) .page__title { display: none; }
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More detail</summary>
-        <p>An explicit world model serves as the working memory of a language-model agent: a small, active set of variables, hypotheses, and verified models, held with uncertainty over alternatives. I study this across numerical laws, causal structure, relational rules, and the laws that govern how actions change the world.</p>
-        <p>Working memory is small, so deciding what to load into it matters as much as the inference performed inside it. Errors arise at the boundary between working memory and the knowledge left outside it, and I study how to diagnose them. The first test of this agenda asks whether an agent that selectively makes relevant outside assumptions explicit judges better than one with a fixed workspace, and adapts more efficiently than one with a broader explicit model, under the same proposer, evidence, and budget.</p>
+        <p>An explicit world model serves as the working memory of a language-model agent: a small, active set of variables, hypotheses, and verified models, held with uncertainty over alternatives. We study this across numerical laws, causal structure, relational rules, and the laws that govern how actions change the world.</p>
+        <p>Working memory is small, so deciding what to load into it matters as much as the inference performed inside it. Errors arise at the boundary between working memory and the knowledge left outside it, and we study how to diagnose them. Our first study asks whether an agent that selectively makes relevant outside assumptions explicit judges better than one with a fixed workspace, and adapts more efficiently than one with a broader explicit model, under the same proposer, evidence, and budget.</p>
       </details>
     </article>
     <article class="hb-dir hb-dir--d3" id="agentic-ai">
@@ -985,14 +988,14 @@ article.page:has(.hb) .page__title { display: none; }
         <p class="hb-dir__plain">AI that plans, acts, and learns from what happens.</p>
       </div>
       <div class="hb-dir__body">
-        <p class="hb-dir__q">Agents run experiments, use tools, and carry out long tasks. We study how they can plan with what they have verified, and keep improving from their own experience without learning their own mistakes.</p>
-        <p class="hb-dir__ask"><span>We ask</span>How can an agent keep improving from its own experience without teaching itself its own errors?</p>
+        <p class="hb-dir__q">Agents run experiments, use tools, and carry out long tasks. We study how they can plan with what they have verified, and keep improving from their own experience without reinforcing their own mistakes.</p>
+        <p class="hb-dir__ask"><span>We ask</span>How can an agent keep improving from its own experience without reinforcing its own errors?</p>
         <ul class="hb-tags"><li>Planning</li><li>Self-improving agents</li><li>Learning from experience</li><li>Tool use</li><li>Consolidation</li></ul>
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More detail</summary>
         <p>A world model is justified by what an agent can do with it: reuse learned laws for new goals, recover quickly when part of the world changes, and check plans before acting. Goals are many and they change, so utility should decide not only what an agent learns but at what resolution it keeps that knowledge and for how long. Verified corrections are first kept as explicit records, and only stable, broadly useful ones are internalized into the model.</p>
-        <p>I also study self-improving agents in which a language model only proposes candidate rules, the records an environment returns decide which rules are believed, and a planner rather than the model itself supplies the training signal, so that errors are not learned from the agent's own answers.</p>
+        <p>We also study self-improving agents in which a language model only proposes candidate rules, the records an environment returns decide which rules are believed, and a planner rather than the model itself supplies the training signal, so that errors are not learned from the agent’s own answers.</p>
         <p class="hb-dir__paper">Related paper: <a href="https://arxiv.org/abs/2610.29250">Let Agents Design How They Search: Automatic Interface Optimization for Agentic Search</a></p>
       </details>
     </article>
@@ -1008,15 +1011,14 @@ article.page:has(.hb) .page__title { display: none; }
       </div>
       <details class="hb-more hb-more--sm">
         <summary>More detail</summary>
-        <p>Decisions computed from explicit beliefs by a fixed procedure can be traced to those beliefs and tested by intervening on everything else. I study what this requires, where implicit knowledge can still bypass it, and how faster learned policies can be checked against the explicit procedure. A small layer of externally specified norms takes priority over goals; I study how such norms are applied under uncertainty, including why an agent under a probability threshold may prefer not to look for evidence, and how a duty of inquiry can close that gap.</p>
-        <p>The language model and external sources are treated alike as inputs whose origin may have an interest in the conclusion. Their influence on belief can be bounded, and claims that can be checked are audited against evidence they cannot shape. What cannot yet be bounded is omission, a model that never proposes the decisive alternative, and I study it by evaluating agents against proposers that are adversarial by construction. In the longer term, the same inference, directed outward, suggests how a controllable agent might help defend against agents directed to cause harm.</p>
+        <p>Decisions computed from explicit beliefs by a fixed procedure can be traced to those beliefs and tested by intervening on everything else. We study what this requires, where implicit knowledge can still bypass it, and how faster learned policies can be checked against the explicit procedure. A small layer of externally specified norms takes priority over goals; we study how such norms are applied under uncertainty, including why an agent under a probability threshold may prefer not to look for evidence, and how a duty of inquiry can close that gap.</p>
+        <p>The language model and external sources are treated alike as inputs whose origin may have an interest in the conclusion. Their influence on belief can be bounded, and claims that can be checked are audited against evidence they cannot shape. What cannot yet be bounded is omission, a model that never proposes the decisive alternative, and we study it by evaluating agents against proposers that are adversarial by construction. In the longer term, we ask how a controllable agent might help defend against agents directed to cause harm.</p>
       </details>
     </article>
   </div>
 
   <details class="hb-more hb-tech">
     <summary>For researchers: the technical picture</summary>
-    <p>I treat an explicit world model as the working memory of a language-model agent, and ask how much the structure around a pretrained model can guarantee when that model cannot be assumed honest.</p>
     <div class="hb-powers">
     <p class="hb-powers__lede">Four parties shape what an agent does. Only one of them decides what it believes.</p>
     <div class="hb-powers__scroll">
@@ -1053,11 +1055,11 @@ article.page:has(.hb) .page__title { display: none; }
   <p class="hb-paperlink"><a href="/files/explicit_world_models_white_paper.pdf">Read the white paper (PDF)</a></p>
   -->
 
-    <p>Language models know a great deal about the world, but their knowledge is stored in parameters. It is not attached to the evidence that supports it, it carries no calibrated estimate of its reliability, and when part of it is wrong for a particular system, there is no explicit place where the error can be found and repaired. My research asks how an agent that knows many things can also know <em>what to trust, what to question, and what to do next</em>.</p>
+    <p>Language models know a great deal about the world, but their knowledge is stored in parameters. It is not attached to the evidence that supports it, it carries no calibrated estimate of its reliability, and when part of it is wrong for a particular system, there is no explicit place where the error can be found and repaired. Our research asks how an agent that knows many things can also know <em>what to trust, what to question, and what to do next</em>.</p>
     <p>The question is becoming urgent for two reasons. In domains where experiments are costly, generating candidate hypotheses is now far cheaper than testing them, so the bottleneck shifts from <strong>generation</strong> to <strong>verification and selection</strong>. And language models are increasingly deployed as agents that act with decreasing supervision. For an agent, the deficit extends from what it knows to what it does: the beliefs behind an action cannot be inspected before it is taken, and the reasons a model gives need not be the reasons that produced its behavior. As models grow more capable, the value of explicit knowledge shifts from an instrument of accuracy to an instrument of <strong>oversight</strong>, and in that role it grows with capability rather than against it.</p>
-    <p>I therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. A pretrained language model proposes hypotheses and supplies background knowledge; probabilistic inference, under stated evidence models, decides what is believed; and goals decide what the agent attends to, never what it believes. Knowledge is brought into working memory when it must be tested, repaired there, and archived with its evidence. Records that prove stable are internalized back into the model; the rest are kept for exact computation or forgotten. Because working memory reasons explicitly about only a few variables, its central difficulty lies at its boundary, and understanding that boundary tells an agent what to make explicit.</p>
-    <p>The same workspace can make action accountable. If decisions are computed from its contents by a fixed procedure, the language model can influence behavior only through items it places there, where they carry a status and can be examined. A small layer of externally specified norms constrains what may be pursued, with priority over the agent's goals, and neither goals nor norms are allowed to reweight belief.</p>
-    <p>One assumption runs through this work: the language model cannot be assumed honest, and training a capable model from scratch is beyond an academic laboratory. I take this constraint as a question rather than an excuse. <strong>When the model that proposes hypotheses and summarizes the unmodeled world cannot be trusted, how much can the structure around it guarantee, and where exactly does it fail?</strong> The answer is informative either way, and because the structure does not depend on what fills the model's place, a more trustworthy predictor could later be studied in exactly the roles where this design is weakest.</p>
+    <p>We therefore treat an explicit world model as the <strong>working memory</strong> of a language-model agent. A pretrained language model proposes hypotheses and supplies background knowledge; probabilistic inference, under stated evidence models, decides what is believed; and goals decide what the agent attends to, never what it believes. Knowledge is brought into working memory when it must be tested, repaired there, and archived with its evidence. Records that prove stable are internalized back into the model; the rest are kept for exact computation or forgotten. Because working memory reasons explicitly about only a few variables, its central difficulty lies at its boundary, and understanding that boundary tells an agent what to make explicit.</p>
+    <p>The same workspace can make action accountable. If decisions are computed from its contents by a fixed procedure, the language model can influence behavior only through items it places there, where they carry a status and can be examined. A small layer of externally specified norms constrains what may be pursued, with priority over the agent’s goals, and neither goals nor norms are allowed to reweight belief.</p>
+    <p>One assumption runs through this work: the language model cannot be assumed honest, and training a capable model from scratch is beyond the resources of an academic laboratory like ours. We take this constraint as a question rather than an excuse. <strong>When the model that proposes hypotheses and summarizes the unmodeled world cannot be trusted, how much can the structure around it guarantee, and where exactly does it fail?</strong> The answer is informative either way, and because the structure does not depend on what fills the model’s place, a more trustworthy predictor could later be studied in exactly the roles where this design is weakest.</p>
     <p>The first claim to be tested is the simplest: that selectively making the relevant assumptions explicit improves judgment and adaptation enough to justify its cost. The rest of the agenda builds on that answer.</p>
   
   </details>
@@ -1065,7 +1067,7 @@ article.page:has(.hb) .page__title { display: none; }
 
 <section class="hb-students" id="prospective-students" aria-labelledby="students-title">
   <h2 class="hb-h2" id="students-title">Prospective students</h2>
-  <p>I welcome motivated students from electrical engineering, computer science, mathematics, and related fields who are excited by questions about intelligence, reasoning, and learning. If these directions interest you, please feel free to contact me.</p>
+  <p>I welcome motivated students from electrical engineering, computer science, mathematics, and related fields who are excited by questions about intelligence, reasoning, and learning. If these themes interest you, please feel free to contact me.</p>
   <dl class="hb-req">
     <div><dt>Undergraduate interns</dt><dd>No prior AI or ML experience required. Curiosity, initiative, and enthusiasm for research matter most.</dd></div>
     <div><dt>Master’s students</dt><dd>Some background in AI or ML, shown through coursework, research internships, or relevant experience.</dd></div>
